@@ -5,6 +5,7 @@ class Module:
         
         self.id = id
         self.name = name
+        self.description = description
         self.stock = stock
         self.buying_cost = buying_cost
         self.selling_price = selling_price
