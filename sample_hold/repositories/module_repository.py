@@ -6,7 +6,10 @@ import repositories.manufacturer_repository as manufacturer_repository
 
 
 def save(module):
-    sql = "INSERT INTO modules (name, description, stock, buying_cost, selling_price, function, width, depth, image_url, minus_12v, plus_12v, manufacturer_id) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s) RETURNING *"
+    sql = """INSERT INTO modules (name, description, stock, buying_cost, 
+    selling_price, function, width, depth, image_url, minus_12v, plus_12v, manufacturer_id) 
+    VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s) RETURNING *"""
+    
     values = [module.name, module.description, module.stock, module.buying_cost, module.selling_price, 
     module.function, module.width, module.depth, module.image_url, module.minus_12v, module.plus_12v, module.manufacturer.id]
     results = run_sql(sql, values)
