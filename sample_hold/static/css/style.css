@@ -39,7 +39,7 @@ h3 {
 .content {
     display: flex;
     flex-direction: column;
-    margin: 10px 0 10px 0;
+    margin: 10px 0 20px 0;
 }
 
 
@@ -110,6 +110,10 @@ pre {
 
 #edit {
     margin-top: 1em;
+}
+
+#add {
+    margin-top: 20px;
 }
 
 #bin {
