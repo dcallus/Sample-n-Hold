@@ -19,8 +19,8 @@ CREATE TABLE modules (
   function VARCHAR(255),
   width INT,
   depth INT,
-  image_url VARCHAR(255),
   minus_12v INT,
   plus_12v INT,
-  manufacturer_id INT REFERENCES manufacturers(id)
+  manufacturer_id INT REFERENCES manufacturers(id),
+  image_url VARCHAR(255)
 );
