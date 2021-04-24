@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+{% for module in all_modules %}
+  <div class="module">
+    <div class="content">
+      <!-- <a href="/modules/{{module.id}}">{{module.name}}</a> -->
+        {{module.description}}
+        {{module.name}}
+
+{% endfor %}
+
+{% endblock %}
