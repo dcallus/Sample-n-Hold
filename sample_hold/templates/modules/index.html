@@ -5,7 +5,7 @@
 {% for module in all_modules %}
 <div class="module">
   <div class="content">
-    <span>
+    <span id="header">
       <h3>{{module.name}} by {{module.manufacturer.name}} - {{module.function}}</h3>
     </span>
     <!-- <a href="/modules/{{module.id}}">{{module.name}}</a> -->
@@ -23,8 +23,8 @@
       <section class='image'>
         <img src="{{module.image_url}}" alt="module pic">
       </section>
-      <aside id='edit'>
-          <div>
+      <aside id='edit-bar'>
+          <div id="edit">
             edit
           </div>
           <div id="bin"> 
