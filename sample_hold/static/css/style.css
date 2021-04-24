@@ -14,7 +14,7 @@
 .content {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 
@@ -23,6 +23,8 @@ pre {
 }
 
 #info-box {
+    display: flex;
+    flex-direction: row;
     width: 75%
 }
 

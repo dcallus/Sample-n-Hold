@@ -3,19 +3,27 @@
 
 
 {% for module in all_modules %}
-  <div class="module">
-    <div class="content">
-        <span><h3>{{module.name}} by {{module.manufacturer.name}} - {{module.function}}</h3></span>
-      <!-- <a href="/modules/{{module.id}}">{{module.name}}</a> -->
-      <span class='tabs'><nav>Description</nav>
+<div class="module">
+  <div class="content">
+    <span>
+      <h3>{{module.name}} by {{module.manufacturer.name}} - {{module.function}}</h3>
+    </span>
+    <!-- <a href="/modules/{{module.id}}">{{module.name}}</a> -->
+    <span class='tabs'>
+      <nav>Description</nav>
       <nav>Specification</nav>
-      <nav id='shop-tab'>Shop</nav></span>
-      <div id='info-box'>
-        <pre>{{module.description}}</pre>
-      </div>
-      <div id='image'>
+      <nav id='shop-tab'>Shop</nav>
+    </span>
+    <section id='info-box'>
+      <pre>{{module.description}}</pre>
+      <span id='image'>
         <img src="{{module.image_url}}" alt="module pic">
-      </div>
+      </span>
+    </section>
+  </div>
+</div>
+
+
 {% endfor %}
 
 {% endblock %}
