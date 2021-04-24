@@ -39,6 +39,7 @@ h3 {
 .content {
     display: flex;
     flex-direction: column;
+    margin: 10px 0 10px 0;
 }
 
 
@@ -64,7 +65,7 @@ pre {
 
 .desc {
     overflow: scroll;
-    height: 250px;
+    height: 350px;
     width: 70%;
     flex-grow: 2;
     flex-shrink: 2;

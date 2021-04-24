@@ -5,6 +5,7 @@ from models.manufacturer import Manufacturer
 import repositories.module_repository as module_repository
 import repositories.manufacturer_repository as manufacturer_repository
 
+# TEMPORARILY REMOVE TO CREATE MULTIPLES
 module_repository.delete_all()
 manufacturer_repository.delete_all()
 
