@@ -1,0 +1,12 @@
+* {
+    border: 1px solid red;
+}
+
+.tabs > nav {
+    display: inline;
+    padding: 10px;
+}
+
+#shop-tab{
+    padding-left: 100px;
+}
