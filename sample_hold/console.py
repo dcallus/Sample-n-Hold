@@ -8,7 +8,11 @@ import repositories.manufacturer_repository as manufacturer_repository
 module_repository.delete_all()
 manufacturer_repository.delete_all()
 
-mutant_url = "https://www.modulargrid.net/img/imagecache/212x413_3535.jpg"
+
+# mutant_url = "https://www.modulargrid.net/img/imagecache/212x413_3535.jpg"
+mutant_url = "https://www.modulargrid.net/img/modcache/32519.f.jpg"
+
+
 mutant_description = """====Primary Features====
 It's really two modules in one: a totally unique analogue bassdrum and a voltage controlled distortion module! (with the same topology as batteryACID!)
 

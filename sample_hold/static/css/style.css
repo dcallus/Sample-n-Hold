@@ -28,6 +28,18 @@ pre {
     width: 75%
 }
 
-#image > img {
-    height: 200px;
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
+
+#image {
+    /* object-fit: cover; */
+    width: 70%;
+    height: 70%;
+}
+
+/* #image > img {
+    object-fit: cover;
+} */
