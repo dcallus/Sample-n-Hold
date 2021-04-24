@@ -44,15 +44,15 @@ def select_all():
 #     return book
 
 
-# def delete_all():
-#     sql = "DELETE  FROM books"
-#     run_sql(sql)
+def delete_all():
+    sql = "DELETE  FROM modules"
+    run_sql(sql)
 
 
-# def delete(id):
-#     sql = "DELETE  FROM books WHERE id = %s"
-#     values = [id]
-#     run_sql(sql, values)
+def delete(id):
+    sql = "DELETE  FROM modules WHERE id = %s"
+    values = [id]
+    run_sql(sql, values)
 
 
 # def update(book):
