@@ -18,18 +18,18 @@ def save(module):
     return module
 
 
-# def select_all():
-#     books = []
+def select_all():
+    modules = []
 
-#     sql = "SELECT * FROM books"
-#     results = run_sql(sql)
+    sql = "SELECT * FROM modules"
+    results = run_sql(sql)
 
-#     for row in results:
-#         author = author_repository.select(row['author_id'])
-#         book = Book(row['title'], row['genre'], row['publisher'], author, row['id'] )
-#         books.append(book)
-#     return books
-
+    for row in results:
+        manufacturer = manufacturer_repository.select(row['manufacturer_id'])
+        module = Module(row['name'], row['description'], row['stock'], row['buying_cost'], row['selling_price'],
+        row['function'], row['width'], row['depth'], row['image_url'], row['minus_12v'], row['plus_12v'], row['manufacturer_id'])
+        modules.append(module)
+    return modules
 
 
 # def select(id):

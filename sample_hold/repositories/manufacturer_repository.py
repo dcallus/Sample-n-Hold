@@ -25,15 +25,15 @@ def save(manufacturer):
 #     return authors
 
 
-# def select(id):
-#     author = None
-#     sql = "SELECT * FROM authors WHERE id = %s"
-#     values = [id]
-#     result = run_sql(sql, values)[0]
+def select(id):
+    manufacturer = None
+    sql = "SELECT * FROM manufacturers WHERE id = %s"
+    values = [id]
+    result = run_sql(sql, values)[0]
 
-#     if result is not None:
-#         author = Author(result['first_name'], result['last_name'], result['id'] )
-#     return author
+    if result is not None:
+        manufacturer = Manufacturer(result['name'], result['address'], result['phone'], result['website'])
+    return manufacturer
 
 
 # def delete_all():
