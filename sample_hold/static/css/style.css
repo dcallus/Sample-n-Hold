@@ -6,8 +6,12 @@ body {
     min-width: 290px;
 }
 
+h3 {
+    margin: 0;
+}
+
 #header {
-    height: 3em;
+    height: 100%;
 }
 
 .tabs > nav {
@@ -60,9 +64,10 @@ pre {
 
 .desc {
     overflow: scroll;
-    height: 200px;
+    height: 250px;
     width: 70%;
     flex-grow: 2;
+    flex-shrink: 2;
 }
 
 .image {
