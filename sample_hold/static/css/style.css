@@ -8,5 +8,16 @@
 }
 
 #shop-tab{
-    padding-left: 100px;
+    margin-left: 100px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+pre {
+    white-space: pre-wrap;
 }
