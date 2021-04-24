@@ -9,8 +9,8 @@ module_repository.delete_all()
 manufacturer_repository.delete_all()
 
 
-# mutant_url = "https://www.modulargrid.net/img/imagecache/212x413_3535.jpg"
-mutant_url = "https://www.modulargrid.net/img/modcache/32519.f.jpg"
+mutant_url = "https://www.modulargrid.net/img/imagecache/212x413_3535.jpg"
+# mutant_url = "https://www.modulargrid.net/img/modcache/32519.f.jpg"
 
 
 mutant_description = """====Primary Features====

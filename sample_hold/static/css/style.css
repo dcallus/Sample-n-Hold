@@ -94,6 +94,11 @@ pre {
     text-align: center;
 }
 
+#sell {
+    margin-top: auto;
+    margin-bottom: 1em;
+}
+
 #edit-bar {
     display: flex;
     flex-direction: column;
