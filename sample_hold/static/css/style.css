@@ -3,16 +3,18 @@
 }
 
 .tabs > nav {
-    display: inline;
     padding: 10px;
 }
 
 .tabs {
+    display: flex;
     margin-bottom: 25px;
+    justify-content: left;
 }
 
-#shop-tab{
-    margin-left: 100px;
+.shop-tab {
+    margin-left: auto;
+    margin-right: 30%;
 }
 
 .content {
@@ -42,6 +44,7 @@ pre {
 #desc {
     overflow: scroll;
     height: 200px;
+    width: 70%;
 }
 
 #image {
