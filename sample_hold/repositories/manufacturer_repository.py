@@ -13,16 +13,16 @@ def save(manufacturer):
     return manufacturer
 
 
-# def select_all():
-#     authors = []
+def select_all():
+    manufacturers = []
 
-#     sql = "SELECT * FROM authors"
-#     results = run_sql(sql)
+    sql = "SELECT * FROM manufacturers"
+    results = run_sql(sql)
 
-#     for row in results:
-#         author = Author(row['first_name'], row['last_name'], row['id'] )
-#         authors.append(author)
-#     return authors
+    for row in results:
+        manufacturer = Manufacturer(row['name'], row['address'], row['phone'], row['website'] )
+        manufacturers.append(manufacturer)
+    return manufacturer
 
 
 def select(id):

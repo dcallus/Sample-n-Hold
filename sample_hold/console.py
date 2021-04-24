@@ -7,6 +7,7 @@ import repositories.manufacturer_repository as manufacturer_repository
 
 # book_repository.delete_all()
 # author_repository.delete_all()
+
 mutant_url = "https://www.modulargrid.net/img/imagecache/212x413_3535.jpg"
 mutant_description = """====Primary Features====
 It's really two modules in one: a totally unique analogue bassdrum and a voltage controlled distortion module! (with the same topology as batteryACID!)
@@ -30,9 +31,6 @@ module_1 = Module(name="Mutant Bassdrum", description=mutant_description, stock=
                   image_url=mutant_url, minus_12v=55, plus_12v=45, manufacturer=hexinverter)
 
 module_repository.save(module_1)
-# author2 = Author("David", "Ascher")
-# author_repository.save(author2)
-
 
 # book_1 = Book("Colour of Magic", "Fantasy", "Colin Smythe", author1)
 # book_repository.save(book_1)
