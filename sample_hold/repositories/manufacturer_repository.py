@@ -53,14 +53,15 @@ def update(manufacturer):
               manufacturer.website, manufacturer.id]
     run_sql(sql, values)
 
-# def books(manufacturer):
-#     books = []
+def modules(manufacturer):
+    modules = []
 
-#     sql = "SELECT * FROM books WHERE manufacturer_id = %s"
-#     values = [manufacturer.id]
-#     results = run_sql(sql, values)
+    sql = "SELECT * FROM modules WHERE manufacturer_id = %s"
+    values = [manufacturer.id]
+    results = run_sql(sql, values)
 
-#     for row in results:
-#         book = Book(row['title'], row['genre'], row['publisher'], row['manufacturer_id'], row['id'] )
-#         books.append(book)
-#     return books
+    for row in results:
+        module = Module(row['name'], row['description'], row['stock'], row['buying_cost'], row['selling_price'],
+        row['function'], row['width'], row['depth'], row['minus_12v'], row['plus_12v'], row['manufacturer_id'], row['image_url'], row['id'])
+        module.append(module)
+    return module
