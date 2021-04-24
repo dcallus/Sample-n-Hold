@@ -75,3 +75,7 @@ img {
     /* justify-content: flex-start; */
     width: 10%;
 }
+
+#bin {
+    margin-top: auto;
+}
