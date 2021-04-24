@@ -4,7 +4,7 @@ from models.module import Module
 import repositories.module_repository as module_repository
 import repositories.manufacturer_repository as manufacturer_repository
 
-modules_blueprint = Modules("modules", __name__)
+modules_blueprint = Blueprint("modules", __name__)
 
 @modules_blueprint.route("/modules")
 def modules():
