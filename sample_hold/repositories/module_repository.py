@@ -26,7 +26,7 @@ def select_all():
     for row in results:
         manufacturer = manufacturer_repository.select(row['manufacturer_id'])
         module = Module(row['name'], row['description'], row['stock'], row['buying_cost'], row['selling_price'],
-        row['function'], row['width'], row['depth'], row['minus_12v'], row['plus_12v'], row['manufacturer_id'], row['image_url'], row['id'])
+        row['function'], row['width'], row['depth'], row['minus_12v'], row['plus_12v'], manufacturer, row['image_url'], row['id'])
         modules.append(module)
     return modules
 

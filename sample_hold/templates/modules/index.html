@@ -5,10 +5,10 @@
 {% for module in all_modules %}
   <div class="module">
     <div class="content">
+        <h3>{{module.name}}</h3>
       <!-- <a href="/modules/{{module.id}}">{{module.name}}</a> -->
-        {{module.description}}
-        {{module.name}}
-
+        <pre>{{module.description}}</pre>
+        {{module.manufacturer.name}}
 {% endfor %}
 
 {% endblock %}
