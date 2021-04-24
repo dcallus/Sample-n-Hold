@@ -20,7 +20,7 @@ def select_all():
     results = run_sql(sql)
 
     for row in results:
-        manufacturer = Manufacturer(row['name'], row['address'], row['phone'], row['website'] )
+        manufacturer = Manufacturer(row['name'], row['address'], row['phone'], row['website'], row['id'] )
         manufacturers.append(manufacturer)
     return manufacturer
 
@@ -32,7 +32,7 @@ def select(id):
     result = run_sql(sql, values)[0]
 
     if result is not None:
-        manufacturer = Manufacturer(result['name'], result['address'], result['phone'], result['website'])
+        manufacturer = Manufacturer(result['name'], result['address'], result['phone'], result['website'], result['id'])
     return manufacturer
 
 
@@ -47,19 +47,20 @@ def delete(id):
     run_sql(sql, values)
 
 
-# def update(author):
-#     sql = "UPDATE authors SET (first_name, last_name) = (%s, %s) WHERE id = %s"
-#     values = [author.first_name, author.last_name, author.id]
-#     run_sql(sql, values)
+def update(manufacturer):
+    sql = "UPDATE manufacturers SET (name, address, phone, website) = (%s, %s, %s, %s) WHERE id = %s"
+    values = [manufacturer.name, manufacturer.address, manufacturer.phone,
+              manufacturer.website, manufacturer.id]
+    run_sql(sql, values)
 
-# def books(author):
+# def books(manufacturer):
 #     books = []
 
-#     sql = "SELECT * FROM books WHERE author_id = %s"
-#     values = [author.id]
+#     sql = "SELECT * FROM books WHERE manufacturer_id = %s"
+#     values = [manufacturer.id]
 #     results = run_sql(sql, values)
 
 #     for row in results:
-#         book = Book(row['title'], row['genre'], row['publisher'], row['author_id'], row['id'] )
+#         book = Book(row['title'], row['genre'], row['publisher'], row['manufacturer_id'], row['id'] )
 #         books.append(book)
 #     return books
