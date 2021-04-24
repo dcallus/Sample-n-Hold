@@ -17,7 +17,6 @@ def save(module):
     module.id = id
     return module
 
-
 def select_all():
     modules = []
 
@@ -32,16 +31,17 @@ def select_all():
     return modules
 
 
-# def select(id):
-#     book = None
-#     sql = "SELECT * FROM books WHERE id = %s"
-#     values = [id]
-#     result = run_sql(sql, values)[0]
+def select(id):
+    module = None
+    sql = "SELECT * FROM modules WHERE id = %s"
+    values = [id]
+    result = run_sql(sql, values)[0]
 
-#     if result is not None:
-#         author = author_repository.select(result['author_id'])
-#         book = Book(result['title'], result['genre'], result['publisher'], author, result['id'] )
-#     return book
+    if result is not None:
+        module = manufacturer_repository.select(result['manufacturer_id'])
+        module = Module(result['name'], result['description'], result['stock'], result['buying_cost'], result['selling_price'],
+        result['function'], result['width'], result['depth'], result['image_url'], result['minus_12v'], result['plus_12v'], result['manufacturer_id'])
+    return module
 
 
 def delete_all():
