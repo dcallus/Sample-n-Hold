@@ -11,27 +11,25 @@
     <!-- <a href="/modules/{{module.id}}">{{module.name}}</a> -->
 
     <span class='tabs'>
-      <nav>Description</nav>
-      <nav>Specification</nav>
+      <nav class="desc-tab">Description</nav>
+      <nav class="spec-tab">Specification</nav>
       <nav class='shop-tab'>Shop</nav>
     </span>
 
-    <section id='info-box'>
-      <article id="desc">
+    <section class='info-box'>
+      <article class="desc">
       <pre>{{module.description}}</pre>
     </article>
-      <section id='image'>
+      <section class='image'>
         <img src="{{module.image_url}}" alt="module pic">
       </section>
-      <aside>
-        <div id="far-right">
+      <aside id='edit'>
           <div>
             edit
           </div>
           <div>
             new
           </div>
-        </div>
       </aside>
 
     </section>
