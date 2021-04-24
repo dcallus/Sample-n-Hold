@@ -21,3 +21,11 @@
 pre {
     white-space: pre-wrap;
 }
+
+#info-box {
+    width: 75%
+}
+
+#image > img {
+    height: 200px;
+}
