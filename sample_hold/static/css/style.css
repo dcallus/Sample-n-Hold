@@ -115,13 +115,16 @@ textarea
     text-align: center;
 }
 
-/* .stock-entry {
+/* fieldset */
+.stock-entry {
     display: flex;
-} */
+    width: 50px;
+}
 
-/* #stock-num {
-    margin-left: 4px;
-    /* width: 20px; */
+/* stock number (on module page) */
+#stock-fig {
+    text-align: center;
+}
 
 #sell {
     margin-top: auto;
