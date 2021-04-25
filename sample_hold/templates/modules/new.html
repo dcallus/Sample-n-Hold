@@ -2,14 +2,13 @@
 {% block content %}
 
 
-{% for module in all_modules %}
 <div class="module">
     <div class="content">
         <span id="header">
             <form action="/modules" method="POST">
                 <h3>{% include 'modules/new_form.html' %}</h3>
         </span>
-        <!-- <a href="/modules/{{module.id}}">{{module.name}}</a> -->
+        
 
         <span class='tabs'>
             <nav class="desc-tab">Description</nav>
@@ -50,6 +49,5 @@
 </div>
 
 
-{% endfor %}
 
 {% endblock %}

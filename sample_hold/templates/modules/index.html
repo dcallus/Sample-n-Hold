@@ -21,7 +21,11 @@
         <pre>{{module.description}}</pre>
       </article>
       <section class='image'>
+        {% if module.image_url %}
         <img src="{{module.image_url}}" alt="module pic">
+        {% else %}
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg" alt="no image">
+        {% endif %}
         <figure id='stock-fig'>stock:<br> {{module.stock}}</figure>
         <nav id='sell'>sell</nav>
       </section>
