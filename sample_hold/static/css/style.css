@@ -1,6 +1,6 @@
-/* * {
+* {
     outline: 1px solid blue;
-} */
+}
 
 body {
     min-width: 290px;
@@ -108,8 +108,10 @@ textarea
     margin-top: 1em;
 }
 
-#stock {
-    width: 50%;
+.stock {
+    display: flex;
+    width: 60%;
+    justify-content: center;
     text-align: center;
 }
 
@@ -204,6 +206,7 @@ input[type=text]:focus {
     border: 1px solid rgba(110, 186, 245, 0.25);
 }
 
-/* #stock {
-    display: inline;
-} */
+#stock-num {
+    margin-left: 4px;
+    /* width: 20px; */
+}
