@@ -21,6 +21,7 @@ h3 {
 .tabs {
     display: flex;
     justify-content: left;
+    margin-top: 0.5em;
 }
 
 .shop-tab {
