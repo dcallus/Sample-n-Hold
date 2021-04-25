@@ -20,9 +20,9 @@
     </section>
     <section class="shop-input">
         <label for="buying-cost">Buying cost £</label>
-        <input class="form-element"  name="buying-cost" id="buying-cost" type="number" min="1" required placeholder='100'>
+        <input class="form-element"  name="buying-cost" id="buying-cost" type="number" min="1" value = "{{ module.buying_cost }}" required>
         <br>
         <label for="buying-cost">Selling price £</label>
-        <input class="form-element"  name="selling-price" id="selling-price" type="number" min="1" required placeholder='150'>
+        <input class="form-element"  name="selling-price" id="selling-price" type="number" min="1" value = "{{ module.selling_price }}" required>
     </section>
 </fieldset>
