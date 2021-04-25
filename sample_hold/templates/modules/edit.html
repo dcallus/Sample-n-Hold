@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<div class="module">
+    <div class="content">
+        <span id="header">
+            <form action="/modules/{{ module.id }}" method="POST">
+                <h3>{% include 'modules/edit_form.html' %}</h3>
+        </span>
+        
+
+        <span class='tabs'>
+            <nav class="desc-tab">Description</nav>
+            <nav class="spec-tab">Specification</nav>
+            <nav class='shop-tab'>Shop</nav>
+        </span>
+
+        <section class='info-box'>
+            <article class="desc">
+                {% include 'modules/edit_textarea.html' %}
+            </article>
+            <section class='image'>
+                <div class="new-image">
+                    <textarea class="image-url" name="image-url" id="image-url" cols="30" rows="10" placeholder="enter image url:
+                    http://" value="{{ module.image_url }}"></textarea>
+                </div>
+                <fieldset class=stock-entry>
+                <figure class='stock'>stock:<input class="form-element stock" name="stock" id="stock-num" type="number" min="0" value ="{{ module.stock }}" ></figure>
+                </fieldset>
+
+            </section>
+            <aside id='edit-bar'>
+                <div id="edit">
+                    <button type="submit" class="save-button">save</button>
+                </div>
+                <br>
+                <div>
+                <input type="reset" value="reset" class="reset-button">
+            </div>
+                <div id="add">
+                    <a href="/modules">cancel</a>
+                </div>
+                <div id="bin">
+                    <!-- only make visible on edit page -->
+                    
+                </div>
+            </aside>
+
+        </section>
+    </div>
+    </form>
+</div>
+
+
+
+{% endblock %}

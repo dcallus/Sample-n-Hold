@@ -49,13 +49,13 @@ def create_module():
 #     module = module_repository.select(id)
 #     return render_template('modules/show.html', module = module)
 
-# # EDIT
-# # GET '/modules/<id>/edit'
-# @modules_blueprint.route("/modules/<id>/edit", methods=['GET'])
-# def edit_module(id):
-#     module = module_repository.select(id)
-#     manufacturers = manufacturer_repository.select_all()
-#     return render_template('modules/edit.html', module = module, all_manufacturers = manufacturers)
+# EDIT
+# GET '/modules/<id>/edit'
+@modules_blueprint.route("/modules/<id>/edit", methods=['GET'])
+def edit_module(id):
+    module = module_repository.select(id)
+    manufacturers = manufacturer_repository.select_all()
+    return render_template('modules/edit.html', module = module, all_manufacturers = manufacturers)
 
 # # UPDATE
 # # PUT '/modules/<id>'
