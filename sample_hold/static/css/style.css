@@ -134,6 +134,19 @@ textarea
     margin-top: 1em;
 }
 
+.new-image {
+    background: url("https://www.modulargrid.net/img/imagecache/377x800_83.jpg");
+    width: auto;
+}
+
+.image-url {
+    border: 0;
+    margin:0;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.8);
+    resize: none;
+}
+
 .stock {
     width: 60%;
     justify-content: center;
@@ -144,6 +157,8 @@ textarea
 .stock-entry {
     display: flex;
     width: 50px;
+    margin-top: auto;
+    margin-bottom: 2em;
 }
 
 /* stock number (on module page) */
