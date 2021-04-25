@@ -240,15 +240,42 @@ input[type=text]:focus {
     padding-top: 2px;
 }
 
+.clear-button:active {
+    color: red;
+}
+
 .clear-button:hover {
     background-color: rgba(255, 0, 0, 0.1);
     box-shadow: 0 0 4px rgb(255, 0, 0);
     padding-top: 4px;
 }
 
-.clear-button:active {
+.reset-button {
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+.reset-button:hover {
+    background-color: rgba(255, 0, 0, 0.2);
+    box-shadow: 0 0 4px rgb(255, 0, 0);
+}
+
+.reset-button:active {
     color: red;
 }
+
+.save-button {
+    background-color: rgba(0, 255, 0, 0.1);
+}
+
+.save-button:hover {
+    background-color: rgba(0, 255, 0, 0.1);
+    box-shadow: 0 0 4px rgb(0, 255, 0);
+}
+
+.save-button:active {
+    background-color: rgba(0, 255, 0, 0.4);
+}
+
 
 .form-element {
     border: 1px solid rgba(255, 0, 0, 0.5);
