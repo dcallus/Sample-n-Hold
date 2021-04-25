@@ -19,9 +19,7 @@
 
         <section class='info-box'>
             <article class="desc">
-                <fieldset>
-                    <pre><textarea class="textwrapper form-element" name="input-description" cols="10" rows="20" placeholder="Description goes here:" required></textarea></pre>
-                </fieldset>
+                {% include 'modules/new_textarea.html' %}
             </article>
             <section class='image'>
                 <img src="{{module.image_url}}" alt="module pic">
