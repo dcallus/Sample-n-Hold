@@ -167,7 +167,7 @@ input[type=text]:active {
 input[type=text] {
     border-radius: 3px;
     box-shadow: 2px 2px 5px rgba(76, 170, 242, 0.2) inset;
-    padding: 2px;
+    padding: 4px 0 0;
     padding-left: 3px;
 }
 
@@ -182,13 +182,14 @@ input[type=text]:focus {
      /* 0 opacity needed for bg otherwise from-group border is partially obscured */
     background-color:rgba(255, 255, 255, 0);
     border: 0px;
-    border-left: 1px solid rgba(100, 100, 100, 0.5);
+    /* border-left: 1px solid rgba(100, 100, 100, 0.5); */
     padding-top: 2px;
 }
 
 .clear-button:hover {
     background-color: rgba(255, 0, 0, 0.1);
     box-shadow: 0 0 4px rgb(255, 0, 0);
+    padding-top: 4px;
 }
 
 .clear-button:active {
