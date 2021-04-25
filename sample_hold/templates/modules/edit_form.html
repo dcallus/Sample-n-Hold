@@ -6,10 +6,12 @@
             <select class="form-element" name="manufacturer-id" id="manufacturer" required>
                 <option value="{{ module.manufacturer.id }}" selected>{{ module.manufacturer.name }}
         {% for manufacturer in all_manufacturers %}
+        {% if manufacturer.name != module.manufacturer.name %}
         <option value="{{ manufacturer.id }}">
         
             {{ manufacturer.name }}
-        </option>   
+        </option>
+        {% endif %}
         
         {% endfor %}
         </select>  - 

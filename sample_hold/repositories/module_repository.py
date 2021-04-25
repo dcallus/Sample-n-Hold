@@ -40,7 +40,7 @@ def select(id):
     if result is not None:
         manufacturer = manufacturer_repository.select(result['manufacturer_id'])
         module = Module(result['name'], result['description'], result['stock'], result['buying_cost'], result['selling_price'], 
-        result['function'], result['width'], result['depth'], result['minus_12v'], result['plus_12v'], result['manufacturer_id'], result['id'])
+        result['function'], result['width'], result['depth'], result['minus_12v'], result['plus_12v'], manufacturer, result['id'])
     return module
 
 
