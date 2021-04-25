@@ -15,8 +15,9 @@ def modules():
 # GET '/modules/new'
 @modules_blueprint.route("/modules/new", methods=['GET'])
 def new_module():
+    modules = module_repository.select_all()
     manufacturers = manufacturer_repository.select_all()
-    return render_template("modules/new.html", all_manufacturers = manufacturers)
+    return render_template("modules/new.html", all_manufacturers = manufacturers, all_modules = modules)
 
 # CREATE
 # POST '/modules'
