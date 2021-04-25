@@ -45,6 +45,10 @@ h3 {
     margin-right: 10px;
 }
 
+.shop-input {
+    margin: auto;
+}
+
 /* .spec-tab {
     margin-right: 30px;
 } */
@@ -96,11 +100,14 @@ textarea
     flex-shrink: 2;
 }
 
-/* .spec-input {
+.spec-input {
     width: 30%;
-} */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 
-.spec-input input[type=number]{
+.fields input[type=number]{
     width: 40px;
 } 
 
