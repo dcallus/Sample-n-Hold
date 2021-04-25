@@ -32,11 +32,12 @@ def create_module():
     depth = request.form['depth']
     minus_12v = request.form['minus-12v']
     plus_12v = request.form['plus-12v']
-    manufacturer  = manufacturer_repository.select(request.form['manufacturer_id'])
+    manufacturer_id = request.form["manufacturer-id"]
+    manufacturer  = manufacturer_repository.select(manufacturer_id)
     image_url = request.form['image-url']
-    module = Module(row['name'], row['description'], row['stock'], row['buying_cost'], row['selling_price'],
-                    row['function'], row['width'], row['depth'], row['minus_12v'], row['plus_12v'], row['manufacturer_id'], 
-                    row['image_url'], row['id'])
+    module = Module(name, description, stock, buying_cost, selling_price,
+                    function, width, depth, minus_12v, plus_12v, manufacturer, 
+                    image_url, id)
     module_repository.save(module)
     return redirect('/modules')
 
