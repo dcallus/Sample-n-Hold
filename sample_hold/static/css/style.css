@@ -1,6 +1,6 @@
-* {
+/* * {
     outline: 1px solid blue;
-}
+} */
 
 body {
     min-width: 290px;
@@ -73,6 +73,7 @@ textarea
 {
     width:98%;
     height:100%;
+    margin-right: 2%;
 }
 .textwrapper
 {
@@ -109,11 +110,18 @@ textarea
 }
 
 .stock {
-    /* display: flex; */
     width: 60%;
     justify-content: center;
     text-align: center;
 }
+
+/* .stock-entry {
+    display: flex;
+} */
+
+/* #stock-num {
+    margin-left: 4px;
+    /* width: 20px; */
 
 #sell {
     margin-top: auto;
@@ -206,7 +214,3 @@ input[type=text]:focus {
     border: 1px solid rgba(110, 186, 245, 0.25);
 }
 
-#stock-num {
-    margin-left: 4px;
-    /* width: 20px; */
-}
