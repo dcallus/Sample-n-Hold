@@ -137,6 +137,7 @@ textarea
 .new-image {
     background: url("https://www.modulargrid.net/img/imagecache/377x800_83.jpg");
     width: auto;
+    background-size: cover;
 }
 
 .image-url {
