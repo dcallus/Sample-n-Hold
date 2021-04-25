@@ -22,7 +22,7 @@ def select_all():
     for row in results:
         manufacturer = Manufacturer(row['name'], row['address'], row['phone'], row['website'], row['id'] )
         manufacturers.append(manufacturer)
-    return manufacturer
+    return manufacturers
 
 
 def select(id):
