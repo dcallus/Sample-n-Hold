@@ -1,3 +1,16 @@
-<fieldset>
-    <pre><textarea class="textwrapper form-element" name="input-description" cols="10" rows="20" placeholder="Description goes here:" required></textarea></pre>
+<fieldset id="desc-spec-shop">
+    <textarea class="textwrapper form-element" name="input-description" cols="10" rows="20" placeholder="Description goes here:" required></textarea>
+    <section class="spec-input">
+        -12v
+        <input class="form-element" name="minus-12v" id="minus-12v" type="number" min="0" required placeholder='0'>
+        <br>
+        +12v
+        <input class="form-element"  name="plus-12v" id="plus-12v" type="number" min="0" required placeholder='0'>
+        <br>
+        width
+        <input class="form-element"  name="width" id="width" type="number" min="1" required placeholder='1'> HP
+        <br>
+        depth
+        <input class="form-element"  name="depth" id="depth" type="number" min="1" required placeholder='1'> mm
+    </section>
 </fieldset>

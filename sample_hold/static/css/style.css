@@ -1,6 +1,6 @@
-/* * {
+* {
     outline: 1px solid blue;
-} */
+}
 
 body {
     min-width: 290px;
@@ -35,13 +35,19 @@ h3 {
     margin-right: 30%;
 }
 
+.spec-tab {
+    margin-left: 25%;
+    margin-right: 30px;
+}
+
+
 .desc-tab {
     margin-right: 10px;
 }
 
-.spec-tab {
+/* .spec-tab {
     margin-right: 30px;
-}
+} */
 
 .content {
     display: flex;
@@ -71,7 +77,7 @@ pre {
 
 textarea
 {
-    width:98%;
+    width:50%;
     height:100%;
     margin-right: 2%;
 }
@@ -88,6 +94,18 @@ textarea
     width: 70%;
     flex-grow: 2;
     flex-shrink: 2;
+}
+
+/* .spec-input {
+    width: 30%;
+} */
+
+.spec-input input[type=number]{
+    width: 40px;
+} 
+
+#desc-spec-shop {
+    display: flex;
 }
 
 .image {
