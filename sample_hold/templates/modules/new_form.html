@@ -3,7 +3,7 @@
 <div>
     <span class="form-group"><input class="form-element" type="text" id="name" name="name" placeholder="Enter product name..." autofocus required><!-- 
     --><button type="reset" class="clear-button">X</button></span> by 
-    <select name="manufacturer" id="manufacturer">
+    <select class="form-element" name="manufacturer" id="manufacturer" required>
         <option value="" selected disabled hidden>Select a manufacturer...
 {% for manufacturer in all_manufacturers %}
 <option value="{{ manufacturer.id }}">

@@ -20,13 +20,15 @@
         <section class='info-box'>
             <article class="desc">
                 <fieldset>
-                    <pre><textarea name="input-description" class="textwrapper" cols="10" rows="20" placeholder="Description goes here:"></textarea></pre>
+                    <pre><textarea class="textwrapper form-element" name="input-description" cols="10" rows="20" placeholder="Description goes here:" required></textarea></pre>
                 </fieldset>
             </article>
             <section class='image'>
                 <img src="{{module.image_url}}" alt="module pic">
-                <figure id='stock'>stock: {{module.stock}}</figure>
-                <nav id='sell'>sell</nav>
+                <fieldset>
+                <figure id='stock'>stock:<input class="form-element" name="stock" id="stock-num" type="number" min="0" required placeholder='0'></figure>
+                </fieldset>
+
             </section>
             <aside id='edit-bar'>
                 <div id="edit">
