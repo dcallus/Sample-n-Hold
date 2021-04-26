@@ -2,12 +2,12 @@
 {% block content %}
 
 <form action="/manufacturers" method="POST">
-<input type="text" name="name" placeholder="Manufacturer name... " required>
-<input type="text" name="address" placeholder="Address..." required>
-<input type="text" name="phone" placeholder="Phone..." required>
-<input type="text" name="website" placeholder="Website..." required>
-<button type="submit">Add</button>
-
+<input type="text" name="name" value="{{manufacturer.name}}" required>
+<input type="text" name="address" value="{{manufacturer.address}}" required>
+<input type="text" name="phone" value="{{manufacturer.phone}}" required>
+<input type="text" name="website" value="{{manufacturer.website}}" required>
+<button type="submit">Save Changes</button>
+<a href="/manufacturers">Cancel</a>
 </form>
 
 
