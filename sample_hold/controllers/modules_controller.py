@@ -37,7 +37,7 @@ def create_module():
     image_url = request.form['image-url']
     module = Module(name, description, stock, buying_cost, selling_price,
                     function, width, depth, minus_12v, plus_12v, manufacturer, 
-                    image_url, id)
+                    image_url)
     module_repository.save(module)
     return redirect('/modules')
 
