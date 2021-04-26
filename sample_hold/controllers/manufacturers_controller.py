@@ -34,7 +34,11 @@ def create_manufacturer():
 
     manufacturer = Manufacturer(name, address, phone, website)
     manufacturer_repository.save(manufacturer)
-    return redirect('/manufacturers')
+
+    if request.form['redirect-modules'] == 'True':
+        return redirect('/modules/new')
+    else:
+        return redirect('/manufacturers')
 
 # SHOW
 # GET '/manufacturers/<id>'
