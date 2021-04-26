@@ -13,13 +13,15 @@
 {{ manufacturer.phone }} <br>
 
 {% if manufacturer.website %}
-<a href="{{ manufacturer.website }}" target="_blank">{{ manufacturer.website }}</a>
+<a href="{{ manufacturer.website }}" target="_blank">{{ manufacturer.website }}</a><br>
 
 </div>
 
 {% else %}
-None
+No web address available<br>
 {% endif %}
+
+<a href="/{{ manufacturer.id }}/edit">edit</a>
 </li>
 </ul>
 {% endfor %}
