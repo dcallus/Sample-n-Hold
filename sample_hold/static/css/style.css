@@ -220,14 +220,23 @@ textarea
     background-repeat: no-repeat;
 }
 
-#bin {
+.delete_button {
+    width: 30px;
+    height: 30px;
+    background: url('/static/images/bin.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+/* #bin {
 
     width: 30px;
     height: 30px;
     background: url('/static/images/bin.png');
     background-size: cover;
     background-repeat: no-repeat;
-}
+} */
 
 /* FORM colouring */
 

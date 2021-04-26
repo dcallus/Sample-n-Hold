@@ -47,7 +47,9 @@
                     <button type="submit" class="save-button">save</button>
                 </div>
                 <div id="bin-area">
-                    <a href="/modules"> 
+                    <form action="/modules/{{ module.id }}/delete" method="POST">
+                        <input class="delete_button" type="submit" value=" " />
+                      </form>
                         <nav id="bin">
                          
                         </nav>
