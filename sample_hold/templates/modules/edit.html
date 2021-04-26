@@ -46,9 +46,10 @@
                 <div id="add">
                     <button type="submit" class="save-button">save</button>
                 </div>
+            </form>
                 <div id="bin-area">
-                    <form action="/modules/{{ module.id }}/delete" method="POST">
-                        <input class="delete_button" type="submit" value=" " />
+                    <form action="/modules/{{module.id}}/delete" method="POST">
+                        <input class="delete_button" type="submit" value="" />
                       </form>
                         <nav id="bin">
                          
@@ -59,7 +60,7 @@
 
         </section>
     </div>
-    </form>
+   
 </div>
 
 {% endblock %}
