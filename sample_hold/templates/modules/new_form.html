@@ -5,10 +5,10 @@
     <select class="form-element" name="manufacturer-id" id="manufacturer" required>
         <option value="" selected disabled hidden>Select a manufacturer...
 {% for manufacturer in all_manufacturers %}
-<option value="{{ manufacturer.id }}">
-
-    {{ manufacturer.name }}
-</option>   
+{% if manufacturer.disabled != False %}
+<option value="{{ manufacturer.id }}">{{ manufacturer.name }}
+</option> 
+{% endif %}
 
 {% endfor %}
 </select><button class="add-manufacturer"> <a href="../manufacturers/new">+</a> </button>  - 

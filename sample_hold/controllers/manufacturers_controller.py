@@ -53,10 +53,8 @@ def update_manufacturer(id):
     address = request.form['address']
     phone = request.form['phone']
     website = request.form['website']
-    disabled = False
-    if 'disabled' in request.form:
-        disabled = True
-
+    
+    disabled = 'disabled' in request.form
 
     manufacturer = Manufacturer(name, address, phone, website, disabled, id)
 
