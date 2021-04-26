@@ -49,6 +49,13 @@ def show_module(id):
     module = module_repository.select(id)
     return render_template('modules/show.html', module = module)
 
+# SHOW
+# GET '/modules/<id>'
+@modules_blueprint.route("/modules/<id>/specification", methods=['GET'])
+def show_module_with_spec(id):
+    module = module_repository.select(id)
+    return render_template('modules/show_spec.html', module = module)
+
 # EDIT
 # GET '/modules/<id>/edit'
 @modules_blueprint.route("/modules/<id>/edit", methods=['GET'])

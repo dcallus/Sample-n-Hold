@@ -1,0 +1,46 @@
+<div class="module">
+    <div class="content">
+      <span id="header">
+        <h3>{{module.name}} by {{module.manufacturer.name}} - {{module.function}}</h3>
+      </span>
+      <!-- <a href="/modules/{{module.id}}">{{module.name}}</a> -->
+  
+      <span class='tabs'>
+        <nav class="desc-tab"><a href="/modules/{{module.id}}">Description</nav>
+        <nav class="spec-tab"> <a href="/modules/{{module.id}}/specification">Specification</a></nav>
+        <nav class='shop-tab'> <a href="/shop">Shop</a></nav>
+      </span>
+      {% block content %}
+      {% endblock %}
+
+        <section class='image'>
+          {% if module.image_url %}
+          <img src="{{module.image_url}}" alt="module pic">
+          {% else %}
+          <img src="/static/images/no_image.svg" alt="no image">
+          {% endif %}
+          <figure id='stock-fig'>stock:<br> {{module.stock}} <br>
+            {% if module.stock == 0 %}
+            Out of Stock!
+            {% elif module.stock < 4 %}
+            Low stock
+            {% endif %}
+          </figure>
+
+          <nav id='sell'>sell</nav>
+        </section>
+        <aside id='edit-bar'>
+          <div id="edit">
+            <a href="/modules/{{ module.id }}/edit">Edit</a>
+          </div>
+          <div id="add">
+            <a href="/modules/new">+</a>
+          </div>
+          <div id="bin-area">
+            
+          </div>
+        </aside>
+  
+      </section>
+    </div>
+  </div>
