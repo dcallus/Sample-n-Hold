@@ -21,7 +21,14 @@
           {% else %}
           <img src="/static/images/no_image.svg" alt="no image">
           {% endif %}
-          <figure id='stock-fig'>stock:<br> {{module.stock}}</figure>
+          <figure id='stock-fig'>stock:<br> {{module.stock}} <br>
+            {% if module.stock == 0 %}
+            Out of Stock!
+            {% elif module.stock < 4 %}
+            Low stock
+            {% endif %}
+          </figure>
+
           <nav id='sell'>sell</nav>
         </section>
         <aside id='edit-bar'>
