@@ -51,21 +51,10 @@ def edit_manufacturer(id):
 def update_manufacturer(id):
 
     name = request.form['name']
-    description = request.form['description']
-    stock = request.form['stock']
-    buying_cost = request.form['buying-cost']
-    selling_price = request.form['selling-price']
-    function = request.form['function']
-    width = request.form['width']
-    depth = request.form['depth']
-    minus_12v = request.form['minus-12v']
-    plus_12v = request.form['plus-12v']
-    manufacturer_id = request.form["manufacturer-id"]
-    manufacturer  = manufacturer_repository.select(manufacturer_id)
-    image_url = request.form['image-url']
-    manufacturer = Manufacturer(name, description, stock, buying_cost, selling_price,
-                    function, width, depth, minus_12v, plus_12v, manufacturer, 
-                    image_url, id)
+    address = request.form['address']
+    phone = request.form['phone']
+    website = request.form['website']
+    manufacturer = Manufacturer(name, address, phone, website, id)
     manufacturer_repository.update(manufacturer)
 
     return redirect('/manufacturers')

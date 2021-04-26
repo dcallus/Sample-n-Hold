@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 
-<form action="/manufacturers" method="POST">
+<form action="/manufacturers/{{ manufacturer.id }}" method="POST">
 <input type="text" name="name" value="{{manufacturer.name}}" required>
 <input type="text" name="address" value="{{manufacturer.address}}" required>
 <input type="text" name="phone" value="{{manufacturer.phone}}" required>
