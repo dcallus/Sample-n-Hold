@@ -42,6 +42,8 @@ hex_address = "HEXINVERTER ÉLECTRONIQUE, Somewhere in Canada, Maybe Montreal?"
 hexinverter = Manufacturer("Hexinverter", hex_address, "1-555-2345")
 manufacturer_repository.save(hexinverter)
 
+doepfer = Manufacturer("Doepfer", "somewhere in Germany", "555-555-555", "http://www.doepfer.de/")
+manufacturer_repository.save(doepfer)
 
 module_1 = Module(name="Mutant Bassdrum", description=mutant_description, stock="5",
                   buying_cost=150, selling_price=212, function="Drum", width=13, depth=35,

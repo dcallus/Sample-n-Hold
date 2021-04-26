@@ -4,7 +4,20 @@
 
 {% for manufacturer in all_manufacturers %}
 
-{{ manufacturer.name }}
+<p>
+<div id="single-manufacturer">
+{{ manufacturer.name }}, <br> 
+{{ manufacturer.address }} <br>
+{{ manufacturer.phone }} <br>
+
+{% if manufacturer.website %}
+<a href="{{ manufacturer.website }}" target="_blank">{{ manufacturer.website }}</a>
+
+</div>
+</p>
+{% else %}
+None
+{% endif %}
 
 {% endfor %}
 
