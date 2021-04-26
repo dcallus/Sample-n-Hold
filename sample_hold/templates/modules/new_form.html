@@ -5,7 +5,7 @@
     <select class="form-element" name="manufacturer-id" id="manufacturer" required>
         <option value="" selected disabled hidden>Select a manufacturer...
 {% for manufacturer in all_manufacturers %}
-{% if manufacturer.disabled != False %}
+{% if manufacturer.disabled != True %}
 <option value="{{ manufacturer.id }}">{{ manufacturer.name }}
 </option> 
 {% endif %}
