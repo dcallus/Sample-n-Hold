@@ -57,18 +57,30 @@ def edit_module(id):
     manufacturers = manufacturer_repository.select_all()
     return render_template('modules/edit.html', module = module, all_manufacturers = manufacturers)
 
-# # UPDATE
-# # PUT '/modules/<id>'
-# @modules_blueprint.route("/modules/<id>", methods=['POST'])
-# def update_module(id):
-#     title    = request.form['title']
-#     genre = request.form['genre']
-#     publisher   = request.form['publisher']
-#     manufacturer  = manufacturer_repository.select(request.form['manufacturer_id'])
-#     module = module(title, genre, publisher, manufacturer, id)
-#     print(module.manufacturer.full_name())
-#     module_repository.update(module)
-#     return redirect('/modules')
+# UPDATE
+# PUT '/modules/<id>'
+@modules_blueprint.route("/modules/<id>", methods=['POST'])
+def update_module(id):
+
+    name = request.form['name']
+    description = request.form['description']
+    stock = request.form['stock']
+    buying_cost = request.form['buying-cost']
+    selling_price = request.form['selling-price']
+    function = request.form['function']
+    width = request.form['width']
+    depth = request.form['depth']
+    minus_12v = request.form['minus-12v']
+    plus_12v = request.form['plus-12v']
+    manufacturer_id = request.form["manufacturer-id"]
+    manufacturer  = manufacturer_repository.select(manufacturer_id)
+    image_url = request.form['image-url']
+    module = Module(name, description, stock, buying_cost, selling_price,
+                    function, width, depth, minus_12v, plus_12v, manufacturer, 
+                    image_url, id)
+    module_repository.update(module)
+
+    return redirect('/modules')
 
 # # DELETE
 # DELETE '/modules/<id>'

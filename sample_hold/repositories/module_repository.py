@@ -60,6 +60,6 @@ def update(module):
     selling_price, function, width, depth, minus_12v, plus_12v, manufacturer_id, image_url)  = 
     (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s) WHERE id = %s"""
     values = [module.name, module.description, module.stock, module.buying_cost, module.selling_price, 
-    module.function, module.width, module.depth, module.minus_12v, module.plus_12v, module.manufacturer.id, module.id]
+    module.function, module.width, module.depth, module.minus_12v, module.plus_12v, module.manufacturer.id, module.image_url, module.id]
     print(values)
     run_sql(sql, values)
