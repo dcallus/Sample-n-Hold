@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div id="single-manufacturer">
+    {{ manufacturer.name }}, <br> 
+    {{ manufacturer.address }} <br>
+    {{ manufacturer.phone }} <br>
+    
+    {% if manufacturer.website %}
+    <a href="{{ manufacturer.website }}" target="_blank">{{ manufacturer.website }}</a><br>
+    
+    {% else %}
+    No web address available<br>
+    {% endif %}
+    
+    <a href="manufacturers/{{ manufacturer.id }}/edit">edit</a>
+    </li>
+    </ul>
+    </div>
+
+{% endblock %}

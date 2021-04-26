@@ -6,6 +6,7 @@
             <select class="form-element" name="manufacturer-id" id="manufacturer" required>
                 <option value="{{ module.manufacturer.id }}" selected>{{ module.manufacturer.name }}
         {% for manufacturer in all_manufacturers %}
+        <!-- must include below line or manufacturer displayed twice -->
         {% if manufacturer.name != module.manufacturer.name %}
         <option value="{{ manufacturer.id }}">
         

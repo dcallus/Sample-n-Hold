@@ -15,15 +15,14 @@
 {% if manufacturer.website %}
 <a href="{{ manufacturer.website }}" target="_blank">{{ manufacturer.website }}</a><br>
 
-</div>
-
 {% else %}
 No web address available<br>
 {% endif %}
 
-<a href="/{{ manufacturer.id }}/edit">edit</a>
+<a href="manufacturers/{{ manufacturer.id }}/edit">edit</a>
 </li>
 </ul>
+</div>
 {% endfor %}
 
 {% endblock %}
