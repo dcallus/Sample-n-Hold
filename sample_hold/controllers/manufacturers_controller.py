@@ -26,8 +26,6 @@ def create_manufacturer():
     phone = request.form['phone']
     website = request.form['website']
 
-    manufacturer = Manufacturer(name, description, stock, buying_cost, selling_price,
-                    function, width, depth, minus_12v, plus_12v, manufacturer, 
-                    image_url, id)
+    manufacturer = Manufacturer(name, address, phone, website)
     manufacturer_repository.save(manufacturer)
     return redirect('/manufacturers')
