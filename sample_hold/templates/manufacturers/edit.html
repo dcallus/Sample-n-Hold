@@ -9,6 +9,9 @@
 <button type="submit">Save Changes</button>
 <a href="/manufacturers">Cancel</a>
 </form>
-
+<br>
+<form action="/manufacturers/{{manufacturer.id}}/delete" method="POST">
+    <input class="delete_button" type="submit" value="" />
+  </form>
 
 {% endblock %}
