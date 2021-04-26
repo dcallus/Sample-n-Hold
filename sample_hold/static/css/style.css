@@ -209,6 +209,15 @@ textarea
     margin-bottom: 1em;
 }
 
+#close-module {
+
+    width: 30px;
+    height: 30px;
+    background: url('/static/images/close.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 /* FORM colouring */
 
 .form-group {
