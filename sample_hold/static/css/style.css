@@ -2,6 +2,17 @@
     outline: 1px solid blue;
 } */
 
+header {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    padding: 2px 0 3px 3px;
+  }
+
+#content {
+    margin-top: 40px;
+  }
+
 body {
     min-width: 290px;
 }

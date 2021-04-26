@@ -7,11 +7,16 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <title>Sample & Hold</title>
 </head>
-<h1>Sample & Hold</h1>
 <body>
+    <header><h1>Sample & Hold</h1></header>
+    
+    <div id="content">
+
     <div class="container">
         {% block content %}
         {% endblock %}
     </div>
+
+</div>
 </body>
 </html>
