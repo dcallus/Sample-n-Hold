@@ -204,16 +204,27 @@ textarea
     margin-top: 20px;
 }
 
-#bin {
+#bin-area {
     margin-top: auto;
     margin-bottom: 1em;
 }
 
 #close-module {
+    margin-top: 0px;
+    padding-right: 18px;
+    padding-bottom: 12px;
+    width: 20px;
+    height: 20px;
+    background: url('/static/images/close.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#bin {
 
     width: 30px;
     height: 30px;
-    background: url('/static/images/close.png');
+    background: url('/static/images/bin.png');
     background-size: cover;
     background-repeat: no-repeat;
 }

@@ -71,8 +71,8 @@ def edit_module(id):
 #     return redirect('/modules')
 
 # # DELETE
-# # DELETE '/modules/<id>'
-# @modules_blueprint.route("/modules/<id>/delete", methods=['POST'])
-# def delete_module(id):
-#     module_repository.delete(id)
-#     return redirect('/modules')
+# DELETE '/modules/<id>'
+@modules_blueprint.route("/modules/<id>/delete", methods=['POST'])
+def delete_module(id):
+    module_repository.delete(id)
+    return redirect('/modules')
