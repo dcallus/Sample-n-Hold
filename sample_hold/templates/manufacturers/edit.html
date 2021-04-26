@@ -14,7 +14,11 @@
     <input class="delete-button" type="submit" value="" />
     <label for="delete-button">Delete Manufacturer</label>
     
-    <input type="checkbox" id="disabled" name="disabled" value="{{manufacturer.disabled}}">
+    {% if manufacturer.disabled %}
+    <input type="checkbox" id="disabled" name="disabled" checked>hello
+    {% else %}
+    <input type="checkbox" id="disabled" name="disabled">
+    {% endif %}
     <label for="checkbox">Disable Manufacturer (will no longer appear as an option when adding new modules)</label>
   </form>
 

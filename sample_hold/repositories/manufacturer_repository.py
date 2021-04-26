@@ -20,7 +20,7 @@ def select_all():
     results = run_sql(sql)
 
     for row in results:
-        manufacturer = Manufacturer(row['name'], row['address'], row['phone'], row['website'], row['id'], row['disabled'] )
+        manufacturer = Manufacturer(row['name'], row['address'], row['phone'], row['website'], row['disabled'], row['id'] )
         manufacturers.append(manufacturer)
     return manufacturers
 
@@ -32,7 +32,7 @@ def select(id):
     result = run_sql(sql, values)[0]
 
     if result is not None:
-        manufacturer = Manufacturer(result['name'], result['address'], result['phone'], result['website'], result['id'], result['disabled'])
+        manufacturer = Manufacturer(result['name'], result['address'], result['phone'], result['website'], result['disabled'], result['id'])
     return manufacturer
 
 
@@ -50,7 +50,7 @@ def delete(id):
 def update(manufacturer):
     sql = "UPDATE manufacturers SET (name, address, phone, website, disabled) = (%s, %s, %s, %s, %s) WHERE id = %s"
     values = [manufacturer.name, manufacturer.address, manufacturer.phone,
-              manufacturer.website, manufacturer.id, manufacturer.disabled]
+              manufacturer.website, manufacturer.disabled, manufacturer.id]
     run_sql(sql, values)
 
 def modules(manufacturer):
@@ -62,6 +62,6 @@ def modules(manufacturer):
 
     for row in results:
         module = Module(row['name'], row['description'], row['stock'], row['buying_cost'], row['selling_price'],
-        row['function'], row['width'], row['depth'], row['minus_12v'], row['plus_12v'], row['manufacturer_id'], row['image_url'], row['id'], row['disabled'])
+        row['function'], row['width'], row['depth'], row['minus_12v'], row['plus_12v'], row['manufacturer_id'], row['image_url'], row['disabled'], row['id'])
         module.append(module)
     return module

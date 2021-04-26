@@ -42,7 +42,6 @@ def show_manufacturer(id):
 @manufacturers_blueprint.route("/manufacturers/<id>/edit", methods=['GET'])
 def edit_manufacturer(id):
     manufacturer = manufacturer_repository.select(id)
-    manufacturers = manufacturer_repository.select_all()
     return render_template('manufacturers/edit.html', manufacturer = manufacturer)
 
 # UPDATE
@@ -54,9 +53,8 @@ def update_manufacturer(id):
     address = request.form['address']
     phone = request.form['phone']
     website = request.form['website']
-    manufacturer = Manufacturer(name, address, phone, website, id)
-
-    manufacturer.disabled = True if 'disabled' in request.form else False
+    is_disabled = 'disabled' in request.form
+    manufacturer = Manufacturer(name, address, phone, website, is_disabled, id)
 
     manufacturer_repository.update(manufacturer)
 
