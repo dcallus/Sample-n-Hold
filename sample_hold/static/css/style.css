@@ -278,7 +278,7 @@ input[type=text]:focus {
     outline: 0px solid white;
   }
 
-.clear-button {
+.add-manufacturer {
      /* 0 opacity needed for bg otherwise from-group border is partially obscured */
     background-color:rgba(255, 255, 255, 0);
     border: 0px;
@@ -286,11 +286,11 @@ input[type=text]:focus {
     padding-top: 2px;
 }
 
-.clear-button:active {
+.add-manufacturer:active {
     color: red;
 }
 
-.clear-button:hover {
+.add-manufacturer:hover {
     background-color: rgba(255, 0, 0, 0.1);
     box-shadow: 0 0 4px rgb(255, 0, 0);
     padding-top: 4px;
