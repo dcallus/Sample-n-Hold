@@ -286,13 +286,14 @@ input[type=text]:focus {
     padding-top: 2px;
 }
 
-.add-manufacturer:active {
-    color: red;
+.add-manufacturer a {
+    color: black;
+    text-decoration: none;
 }
 
 .add-manufacturer:hover {
-    background-color: rgba(255, 0, 0, 0.1);
-    box-shadow: 0 0 4px rgb(255, 0, 0);
+    background-color: rgba(0, 255, 0, 0.1);
+    box-shadow: 0 0 4px rgb(0, 255, 0);
     padding-top: 4px;
 }
 
