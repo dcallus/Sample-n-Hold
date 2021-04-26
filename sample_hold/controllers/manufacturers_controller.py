@@ -15,7 +15,7 @@ def manufacturers():
 # GET '/manufacturers/new'
 @manufacturers_blueprint.route("/manufacturers/new", methods=['GET'])
 def new_manufacturer():
-    return render_template("manufacturers/new.html", all_manufacturers = manufacturers)
+    return render_template("manufacturers/new.html")
 
 # CREATE
 # POST '/manufacturers'
