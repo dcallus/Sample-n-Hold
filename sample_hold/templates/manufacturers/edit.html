@@ -7,19 +7,20 @@
 <input type="text" name="phone" value="{{manufacturer.phone}}" required>
 <input type="text" name="website" value="{{manufacturer.website}}" required>
 <button type="submit">Save Changes</button>
-<a href="/manufacturers">Cancel</a>
-</form>
-<br>
-<form action="/manufacturers/{{manufacturer.id}}/delete" method="POST">
-    <input class="delete-button" type="submit" value="" />
-    <label for="delete-button">Delete Manufacturer</label>
-    
-    {% if manufacturer.disabled %}
-    <input type="checkbox" id="disabled" name="disabled" checked>hello
+
+{% if manufacturer.disabled %}
+    <input type="checkbox" id="disabled" name="disabled" checked>
     {% else %}
     <input type="checkbox" id="disabled" name="disabled">
     {% endif %}
     <label for="checkbox">Disable Manufacturer (will no longer appear as an option when adding new modules)</label>
-  </form>
+
+</form>
+
+<br>
+<form action="/manufacturers/{{manufacturer.id}}/delete" method="POST">
+    <input class="delete-button" type="submit" value="" />
+    <label for="delete-button">Delete Manufacturer</label>
+</form><a href="/manufacturers">Cancel</a>
 
 {% endblock %}

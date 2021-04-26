@@ -53,8 +53,12 @@ def update_manufacturer(id):
     address = request.form['address']
     phone = request.form['phone']
     website = request.form['website']
-    is_disabled = 'disabled' in request.form
-    manufacturer = Manufacturer(name, address, phone, website, is_disabled, id)
+    disabled = False
+    if 'disabled' in request.form:
+        disabled = True
+
+
+    manufacturer = Manufacturer(name, address, phone, website, disabled, id)
 
     manufacturer_repository.update(manufacturer)
 
