@@ -11,7 +11,11 @@
 </form>
 <br>
 <form action="/manufacturers/{{manufacturer.id}}/delete" method="POST">
-    <input class="delete_button" type="submit" value="" />
+    <input class="delete-button" type="submit" value="" />
+    <label for="delete-button">Delete Manufacturer</label>
+    
+    <input type="checkbox" id="disabled" name="disabled" value="{{manufacturer.disabled}}">
+    <label for="checkbox">Disable Manufacturer (will no longer appear as an option when adding new modules)</label>
   </form>
 
 {% endblock %}

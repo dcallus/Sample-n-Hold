@@ -55,6 +55,9 @@ def update_manufacturer(id):
     phone = request.form['phone']
     website = request.form['website']
     manufacturer = Manufacturer(name, address, phone, website, id)
+
+    manufacturer.disabled = True if 'disabled' in request.form else False
+
     manufacturer_repository.update(manufacturer)
 
     return redirect('/manufacturers')

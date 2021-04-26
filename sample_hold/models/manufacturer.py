@@ -7,3 +7,5 @@ class Manufacturer:
         self.website = website
 
         self.id = id
+
+        self.disabled = False

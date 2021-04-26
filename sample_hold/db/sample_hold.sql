@@ -6,7 +6,8 @@ CREATE TABLE manufacturers (
   name VARCHAR(255),
   address VARCHAR(255),
   phone VARCHAR(255),
-  website VARCHAR(255)
+  website VARCHAR(255),
+  disabled BOOLEAN
 );
 
 CREATE TABLE modules (

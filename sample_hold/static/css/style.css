@@ -220,7 +220,7 @@ textarea
     background-repeat: no-repeat;
 }
 
-.delete_button {
+.delete-button {
     width: 30px;
     height: 30px;
     background: url('/static/images/bin.png');

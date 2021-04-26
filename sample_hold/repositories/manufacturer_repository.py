@@ -6,7 +6,7 @@ from models.module import Module
 
 def save(manufacturer):
     sql = "INSERT INTO manufacturers (name, address, phone, website) VALUES (%s, %s, %s, %s) RETURNING *"
-    values = [manufacturer.name, manufacturer.address, manufacturer.phone, manufacturer.website]
+    values = [manufacturer.name, manufacturer.address, manufacturer.phone, manufacturer.website, manufacturer.disabled]
     results = run_sql(sql, values)
     id = results[0]['id']
     manufacturer.id = id
@@ -50,7 +50,7 @@ def delete(id):
 def update(manufacturer):
     sql = "UPDATE manufacturers SET (name, address, phone, website) = (%s, %s, %s, %s) WHERE id = %s"
     values = [manufacturer.name, manufacturer.address, manufacturer.phone,
-              manufacturer.website, manufacturer.id]
+              manufacturer.website, manufacturer.id, manufacturer.disabled]
     run_sql(sql, values)
 
 def modules(manufacturer):
