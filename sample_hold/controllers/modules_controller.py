@@ -50,11 +50,18 @@ def show_module(id):
     return render_template('modules/show.html', module = module)
 
 # SHOW
-# GET '/modules/<id>'
+# GET '/modules/<id>/specification'
 @modules_blueprint.route("/modules/<id>/specification", methods=['GET'])
 def show_module_with_spec(id):
     module = module_repository.select(id)
     return render_template('modules/show_spec.html', module = module)
+
+# SHOW
+# GET '/modules/<id>/shop'
+@modules_blueprint.route("/modules/<id>/shop", methods=['GET'])
+def show_module_shop_info(id):
+    module = module_repository.select(id)
+    return render_template('modules/show_shop.html', module = module)
 
 # EDIT
 # GET '/modules/<id>/edit'

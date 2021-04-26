@@ -1,0 +1,12 @@
+{% extends "modules/module_base.html" %}
+{% block content %}
+
+<section class='info-box'>
+  <article class="desc">
+    <p>£{{module.buying_cost}}</p>
+    <p>£{{module.selling_price}}</p>
+    <br>
+    <p>markup of {{((module.selling_price - module.buying_cost) / module.buying_cost * 100)|int}}%</p>
+
+  </article>
+{% endblock %}
