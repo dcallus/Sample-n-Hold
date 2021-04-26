@@ -3,49 +3,8 @@
 
 
 {% for module in all_modules %}
-<div class="module">
-  <div class="content">
-    <span id="header">
-      <h3>{{module.name}} by {{module.manufacturer.name}} - {{module.function}}</h3>
-    </span>
-    <!-- <a href="/modules/{{module.id}}">{{module.name}}</a> -->
 
-    <span class='tabs'>
-      <nav class="desc-tab">Description</nav>
-      <nav class="spec-tab">Specification</nav>
-      <nav class='shop-tab'>Shop</nav>
-    </span>
-
-    <section class='info-box'>
-      <article class="desc">
-        <pre>{{module.description}}</pre>
-      </article>
-      <section class='image'>
-        {% if module.image_url %}
-        <img src="{{module.image_url}}" alt="module pic">
-        {% else %}
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg" alt="no image">
-        {% endif %}
-        <figure id='stock-fig'>stock:<br> {{module.stock}}</figure>
-        <nav id='sell'>sell</nav>
-      </section>
-      <aside id='edit-bar'>
-        <div id="edit">
-          <a href="/modules/{{ module.id }}/edit">Edit</a>
-        </div>
-        <div id="add">
-          <a href="/modules/new">+</a>
-        </div>
-        <div id="bin">
-          <!-- only make visible on edit page -->
-          bin
-        </div>
-      </aside>
-
-    </section>
-  </div>
-</div>
-
+{% include 'modules/display_module.html' %}
 
 {% endfor %}
 

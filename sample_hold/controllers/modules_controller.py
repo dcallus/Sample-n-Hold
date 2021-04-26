@@ -42,12 +42,12 @@ def create_module():
     return redirect('/modules')
 
 
-# # SHOW
-# # GET '/modules/<id>'
-# @modules_blueprint.route("/modules/<id>", methods=['GET'])
-# def show_module(id):
-#     module = module_repository.select(id)
-#     return render_template('modules/show.html', module = module)
+# SHOW
+# GET '/modules/<id>'
+@modules_blueprint.route("/modules/<id>", methods=['GET'])
+def show_module(id):
+    module = module_repository.select(id)
+    return render_template('modules/show.html', module = module)
 
 # EDIT
 # GET '/modules/<id>/edit'
