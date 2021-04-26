@@ -17,6 +17,12 @@ def manufacturers():
 def new_manufacturer():
     return render_template("manufacturers/new.html")
 
+# NEW
+# GET '/manufacturers/new_manufacturer'
+@manufacturers_blueprint.route("/manufacturers/new_manufacturer", methods=['GET'])
+def new_manufacturer_from_modules():
+    return render_template("manufacturers/new_from_modules.html")
+
 # CREATE
 # POST '/manufacturers'
 @manufacturers_blueprint.route("/manufacturers",  methods=['POST'])
