@@ -178,6 +178,11 @@ textarea
     text-align: center;
 }
 
+/* non-editable readout */
+#stock-id {
+    margin-top: auto;
+}
+
 #sell {
     margin-top: auto;
     margin-bottom: 1em;
