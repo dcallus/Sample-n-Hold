@@ -64,13 +64,13 @@ h3 {
 .shop-tab {
     margin-left: auto;
     margin-right: 30%;
-    background-color:rgba(138, 28, 28, 0.5);
+    background-color:rgb(249, 168, 163);
 }
 
 .spec-tab {
     margin-left: 25%;
     margin-right: 30px;
-    background-color:rgba(39, 158, 194, 0.5);
+    background-color: rgb(179, 155, 228);
 }
 
 
@@ -82,10 +82,6 @@ h3 {
 .shop-input {
     margin: auto;
 }
-
-/* .spec-tab {
-    margin-right: 30px;
-} */
 
 .content {
     display: flex;
@@ -125,6 +121,7 @@ pre {
 }
 .textwrapper
 {
+    background-color: rgba(255, 255, 255, 0.7);
     border: 0;
     margin:0;
     resize: none;
@@ -144,6 +141,7 @@ pre {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    background-color:rgb(179, 155, 228)
 }
 
 .fields input[type=number]{
@@ -151,6 +149,7 @@ pre {
 } 
 
 #desc-spec-shop {
+    background-color: rgb(249, 168, 163);
     display: flex;
 }
 
