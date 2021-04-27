@@ -1,14 +1,15 @@
 {% extends "modules/module_base.html" %}
 {% block content %}
 
-<div class="content">
+<div class="content" style="box-shadow: 2px 2px 20px rgba(6, 46, 77, 0.4);">
 
 <span id="info">
   <h3>{{module.name}} by <a href="/manufacturers/{{module.manufacturer.id}}">{{module.manufacturer.name}}</a> - {{module.function}}</h3>
+  <a href="/modules"><nav class='close'><i class="far fa-times-circle fa-2x"></i></nav></a>
   </span>
 
 <span class='tabs'>
-  <nav class="desc-tab"><a href="/modules/{{module.id}}">Description</nav>
+  <nav class="desc-tab" style="color:rgba(0, 0, 0, 0.8)">Description</nav>
   <nav class="spec-tab" style="border: 3px solid rgb(254, 243, 237);"> <a href="/modules/{{module.id}}/specification">Specification</a></nav>
   <nav class='shop-tab' style="border: 3px solid rgb(254, 243, 237);"> <a href="/modules/{{module.id}}/shop">Shop</a></nav>
 </span>
