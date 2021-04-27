@@ -5,18 +5,16 @@
 
 <div class="module">
     <div class="content">
-        <span id="header">
             <form action="/modules/{{ module.id }}" method="POST">
+                <span id="info-edit">
                 <h3>{% include 'modules/edit_form.html' %}</h3>
-                
+                <a href="/modules"><nav class='close'><i class="far fa-times-circle fa-2x"></i></nav></a>
         </span>
-        
 
         <span class='tabs'>
             <nav class="desc-tab">Description</nav>
             <nav class="spec-tab">Specification</nav>
             <nav class='shop-tab'>Shop</nav>
-            <a href="/modules"><nav class='close'><i class="far fa-times-circle fa-2x"></i></nav></a>
         </span>
 
         <section class='info-box'>
