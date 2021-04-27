@@ -10,7 +10,8 @@
         <nav class="spec-tab"> <a href="/modules/{{module.id}}/specification">Specification</a></nav>
         <nav class='shop-tab'> <a href="/modules/{{module.id}}/shop">Shop</a></nav>
       </span>
-      {% block content %}
+      <!-- called by specification.html -->
+      {% block content %}  
       {% endblock %}
 
         <section class='image'>
@@ -27,7 +28,7 @@
             {% endif %}
           </figure>
 
-          <nav id='sell'>sell</nav>
+          <nav  id='sell'>sell</nav>
         </section>
         <aside id='edit-bar'>
           <div id="edit">

@@ -2,10 +2,6 @@
     outline: 1px solid blue;
 } */
 
-a {
-    color: white;
-    text-decoration: none;
-}
 
 @font-face {
     font-family: futura;
@@ -13,6 +9,7 @@ a {
   }
 
 header {
+    color: white;
     background-color: white;
     position: sticky;
     top: 0;
@@ -142,6 +139,7 @@ textarea
 }
 
 .image {
+    background-color: rgba(206, 110, 25, 0.721);
     display: flex;
     flex-direction: column;
     flex-basis: 100px;
@@ -204,6 +202,7 @@ textarea
 }
 
 #edit-bar {
+    background-color: rgba(230, 162, 61, 0.721);
     display: flex;
     flex-direction: column;
     align-items: center;
