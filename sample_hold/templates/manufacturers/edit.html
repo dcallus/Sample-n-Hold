@@ -1,19 +1,26 @@
 {% extends "base.html" %}
 {% block content %}
+<!-- use this -->
 
-<form action="/manufacturers/{{ manufacturer.id }}" method="POST">
-<input type="text" name="name" value="{{manufacturer.name}}" required>
-<input type="text" name="address" value="{{manufacturer.address}}" required>
-<input type="text" name="phone" value="{{manufacturer.phone}}" required>
-<input type="text" name="website" value="{{manufacturer.website}}" required>
-<button type="submit">Save Changes</button>
+<div id="single-manufacturer">
+    <form action="/manufacturers/{{manufacturer.id}}" method="POST" class="manufacturer-info">
+    
+        <input type="text" name="name" value="{{manufacturer.name}}" required>
+        <input type="text" name="address" value="{{manufacturer.address}}" required>
+        <input type="text" name="phone" value="{{manufacturer.phone}}" required>
+        <input type="text" name="website" value="{{manufacturer.website}}" required>
+        <input type="text" name="redirect-modules" value='False' hidden><br>
 
-{% if manufacturer.disabled %}
+        {% if manufacturer.disabled %}
     <input type="checkbox" id="disabled" name="disabled" checked>
     {% else %}
     <input type="checkbox" id="disabled" name="disabled">
     {% endif %}
     <label for="checkbox">Disable Manufacturer (will no longer appear as an option when adding new modules)</label>
+    <div id="save-exit-new-manu">
+        <a href="/manufacturers"><nav class='close'><i class="far fa-times-circle fa-2x" style="margin-right: 30px;"></i></nav></a>
+        <button type="submit"><i class="far fa-save fa-3x"></i></button>
+        </div>
 
 </form>
 
@@ -21,6 +28,11 @@
 <form action="/manufacturers/{{manufacturer.id}}/delete" method="POST">
     <input class="delete-button" type="submit" value="" />
     <label for="delete-button">Delete Manufacturer</label>
-</form><a href="/manufacturers">Cancel</a>
+</form>
+
+    </div>
+
+
+
 
 {% endblock %}
