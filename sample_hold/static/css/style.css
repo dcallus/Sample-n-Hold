@@ -311,7 +311,7 @@ pre {
 
 /* FORM colouring */
 
-.form-group {
+/* .form-group {
     border-radius: 4px;
     border: 1px solid rgba(200, 200, 200, 1);
 }
@@ -321,7 +321,8 @@ pre {
     box-shadow: 0 0 6px rgb(45, 159, 247);
     transition: 0.5s;
 
-}
+} */
+
 
 input[type=text]:valid {
     background-color:rgba(110, 186, 245, 0.25);
