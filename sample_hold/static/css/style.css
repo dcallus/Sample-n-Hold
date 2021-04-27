@@ -377,3 +377,8 @@ input[type=text]:focus {
     border: 1px solid rgba(110, 186, 245, 0.25);
 }
 
+
+/* FONT AWESOME */
+.fa-plus-square {
+    padding-right: 8px;
+}
