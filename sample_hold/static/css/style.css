@@ -160,8 +160,33 @@ textarea
 {
     width:50%;
     height:100%;
-    margin-right: 2%;
+    margin-right: 0%;
 }
+
+textarea:valid {
+    background-color:rgba(110, 186, 245, 0.25);
+    box-shadow: 2px 2px 5px rgba(76, 170, 242, 0.2) inset;
+    transition: 0.2s;
+}
+
+textarea:active {
+    background-color:rgba(9, 143, 245, 0.3);
+    transition: 0.1s;
+}
+
+textarea {
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px rgba(76, 170, 242, 0.2) inset;
+    /* padding: 4px 0 0;
+    padding-left: 3px; */
+}
+
+textarea:focus {
+    box-shadow: 0 0 6px rgb(45, 159, 247);
+    transition: .3s;
+    border: 1px solid rgba(77, 77, 240, 0.5);
+    outline: 0px solid white;
+  }
 
 pre {
     background-color: rgba(255, 255, 255, 0.4);
@@ -311,16 +336,13 @@ pre {
 
 /* FORM colouring */
 
-/* .form-group {
+.form-group {
     border-radius: 4px;
-    border: 1px solid rgba(200, 200, 200, 1);
 }
 
-.form-group:active {
-    border: 1px solid rgba(100, 100, 100, 0.5);
+/* .form-group:active {
     box-shadow: 0 0 6px rgb(45, 159, 247);
     transition: 0.5s;
-
 } */
 
 
@@ -332,7 +354,8 @@ input[type=text]:valid {
 
 input[type=text]:active {
     background-color:rgba(9, 143, 245, 0.3);
-    transition: 0.1s;
+    box-shadow: 0 0 10px rgb(45, 159, 247);
+    transition: 0.5s;
 }
 
 input[type=text] {
