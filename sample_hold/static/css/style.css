@@ -32,11 +32,13 @@ button {
 
 header {
     color: white;
-    background-color: white;
     position: sticky;
     top: 0;
     padding: 2px 0 3px 3px;
     background-color:rgba(24, 156, 12, 0.5);
+    background-image: url("/static/images/logo.png");
+    background-size: contain;
+    height: 120px;
   }
 
 #info {
@@ -57,6 +59,7 @@ body {
     background: rgb(254, 243, 237);
     min-width: 290px;
     font-family: futura, helvetica, sans-serif;
+    margin: 0px;
 }
 
 fieldset {
@@ -128,7 +131,7 @@ h3 a:hover {
 .content {
     display: flex;
     flex-direction: column;
-    margin: 10px 0 20px 0;
+    margin: 10px 10px 30px 10px;
 }
 
 .content:hover {
