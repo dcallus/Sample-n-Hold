@@ -228,6 +228,7 @@ pre {
 
 /* stock number (on module page) */
 #stock-fig {
+    margin: 10px;
     text-align: center;
 }
 

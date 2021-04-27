@@ -16,9 +16,9 @@
           {% endif %}
           <figure id='stock-fig'>stock:<br> {{module.stock}} <br>
             {% if module.stock == 0 %}
-            Out of Stock!
+            <p style="background-color: black; color: rgb(240, 76, 76);"> Out of Stock!</p>
             {% elif module.stock < 4 %}
-            Low stock
+            <p style="color: rgb(0, 136, 255);"> Low stock</p>
             {% endif %}
           </figure>
 
