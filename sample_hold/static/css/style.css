@@ -153,6 +153,7 @@ pre {
 }
 
 .desc {
+    padding: 10px;
     background-color:rgba(24, 156, 12, 0.5);
     overflow: scroll;
     height: 350px;
@@ -206,7 +207,7 @@ pre {
 
 .image-url {
     margin:0;
-    width: 98%;
+    width: 96%;
     background-color: rgba(255, 255, 255, 0.8);
     resize: none;
     border: 1px solid rgba(77, 77, 240, 0.3);
@@ -219,12 +220,12 @@ pre {
 }
 
 /* fieldset */
-.stock-entry {
+/* .stock-entry {
     display: flex;
     width: 50px;
     margin-top: auto;
     margin-bottom: 2em;
-}
+} */
 
 /* stock number (on module page) */
 #stock-fig {
