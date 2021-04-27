@@ -18,6 +18,7 @@
     <p>£{{module.selling_price}}</p>
     <br>
     <p>markup of {{((module.selling_price - module.buying_cost) / module.buying_cost * 100)|int}}%</p>
-
+    <br>
+    <p>stock id#: {{module.id}}</p>
   </article>
 {% endblock %}
