@@ -99,7 +99,8 @@ h3 a:hover {
 }
 
 .content:hover {
-    box-shadow: 2px 2px 20px rgba(6, 46, 77, 0.4)
+    box-shadow: 2px 2px 20px rgba(6, 46, 77, 0.4);
+    transition: 0.1s;
 }
 
 
