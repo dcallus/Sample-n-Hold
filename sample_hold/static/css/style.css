@@ -22,6 +22,7 @@ header {
   }
 
 body {
+    background: rgb(254, 243, 237);
     min-width: 290px;
     font-family: futura, helvetica, sans-serif;
 }
