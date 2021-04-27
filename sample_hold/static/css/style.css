@@ -407,3 +407,23 @@ input[type=text]:focus {
     border: none;
     cursor: pointer;
 }
+
+/* manufacturers */
+
+.all-manufacturers {
+    display: flex;
+    align-items: space-between;
+    flex-wrap: wrap;
+}
+
+#single-manufacturer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    line-height: 1.6;
+    background-color:rgba(23, 99, 181, 0.5);
+    width: auto;
+    max-width: 250px;
+    padding: 25px;
+    margin: 20px;
+}

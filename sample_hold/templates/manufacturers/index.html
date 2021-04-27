@@ -2,28 +2,27 @@
 {% block content %}
 
 <h2>Manufacturers</h2>
+
 <a href="/manufacturers/new">Add a new manufacturer</a>
+<div class="all-manufacturers">
 <br>
 {% for manufacturer in all_manufacturers %}
 
-<ul>
-    <li>
 
 <div id="single-manufacturer">
-{{ manufacturer.name }}, <br> 
-{{ manufacturer.address }} <br>
-{{ manufacturer.phone }} <br>
+{{ manufacturer.name }},
+{{ manufacturer.address }} 
+{{ manufacturer.phone }}
+
 
 {% if manufacturer.website %}
 <a href="{{ manufacturer.website }}" target="_blank">{{ manufacturer.website }}</a><br>
 
 {% else %}
-No web address available<br>
+No web address available
 {% endif %}
 
 <a href="manufacturers/{{ manufacturer.id }}/edit">edit</a>
-</li>
-</ul>
 </div>
 {% endfor %}
 
