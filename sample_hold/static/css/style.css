@@ -51,6 +51,16 @@ h3 {
     margin-top: 0.5em;
 }
 
+.tabs a {
+    color: white;
+    text-decoration: none;
+}
+
+.tabs a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
 .shop-tab {
     margin-left: auto;
     margin-right: 30%;
