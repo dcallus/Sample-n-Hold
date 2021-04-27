@@ -379,6 +379,16 @@ input[type=text]:focus {
 
 
 /* FONT AWESOME */
+
+.far { /* generic */
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.far:hover {
+    color: rgba(0, 0, 0, 0.9);
+    
+}
+
 .fa-plus-square {
     padding-right: 8px;
 }
