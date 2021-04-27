@@ -1,11 +1,15 @@
 {% extends "modules/module_base.html" %}
 {% block content %}
+<span id="info">
+<h3>{{module.name}} by <a href="/manufacturers/{{module.manufacturer.id}}">{{module.manufacturer.name}}</a> - {{module.function}}</h3>
+<a href="/modules"><nav class='close'><i class="far fa-times-circle fa-2x"></i></nav></a>
+</span>
 
 <span class='tabs'>
   <nav class="desc-tab" style="border: 3px solid rgb(254, 243, 237);"><a href="/modules/{{module.id}}">Description</nav>
   <nav class="spec-tab"> <a href="/modules/{{module.id}}/specification">Specification</a></nav>
   <nav class='shop-tab' style="border: 3px solid rgb(254, 243, 237);"> <a href="/modules/{{module.id}}/shop">Shop</a></nav>
-  <a href="/modules"><nav class='close'><i class="far fa-times-circle fa-2x"></i></nav></a>
+  
 </span>
 
 <section class='info-box'>

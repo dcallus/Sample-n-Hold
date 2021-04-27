@@ -17,6 +17,11 @@ header {
     background-color:rgba(24, 156, 12, 0.5);
   }
 
+#info {
+    display: flex;
+    justify-content: space-between;
+}
+
 #content {
     margin-top: 40px;
   }
