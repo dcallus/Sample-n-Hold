@@ -98,6 +98,10 @@ h3 a:hover {
     margin: 10px 0 20px 0;
 }
 
+.content:hover {
+    box-shadow: 2px 2px 20px rgba(6, 46, 77, 0.4)
+}
+
 
 pre {
     white-space: pre-wrap;
