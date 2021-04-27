@@ -284,15 +284,6 @@ pre {
     cursor: pointer;
 }
 
-/* #bin {
-
-    width: 30px;
-    height: 30px;
-    background: url('/static/images/bin.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-} */
-
 /* FORM colouring */
 
 .form-group {
@@ -412,4 +403,10 @@ input[type=text]:focus {
 
 .fa-times-circle:hover {
     color: rgba(255, 0, 0, 1);
+}
+
+.bin {
+    background: none;
+    border: none;
+    cursor: pointer;
 }
