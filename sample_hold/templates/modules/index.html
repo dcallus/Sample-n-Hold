@@ -1,6 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
 
+{% if not module %}
+<div id="add">
+            
+    Add a module:<br><a href="/modules/new"><i class="far fa-plus-square fa-2x" style="color:black;"></i></a>
+  </div>
+{% endif %}
 
 {% for module in all_modules %}
 
