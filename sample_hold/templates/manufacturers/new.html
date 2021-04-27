@@ -1,16 +1,18 @@
 {% extends "base.html" %}
 {% block content %}
 
+<div id="single-manufacturer">
 <form action="/manufacturers" method="POST">
 
-<input type="text" name="name" placeholder="Manufacturer name... " required>
-<input type="text" name="address" placeholder="Address..." required>
-<input type="text" name="phone" placeholder="Phone..." required>
-<input type="text" name="website" placeholder="Website..." required>
-<input type="text" name="redirect-modules" value='False' hidden>
-<button type="submit">Add</button>
+<input class="new-manufacturer-info" type="text" name="name" placeholder="Manufacturer name... " required>
+<textarea class="new-manufacturer-info" name="address" placeholder="Address..." rows="10" columns="40" required></textarea>
+<input class="new-manufacturer-info" type="text" name="phone" placeholder="Phone..." required>
+<input class="new-manufacturer-info" type="text" name="website" placeholder="Website..." required>
+<input type="text" name="redirect-modules" value='False' hidden><br>
+<!-- <a href="/modules/new"></a> -->
+<button type="submit"><i class="far fa-plus-square fa-2x" style="color: black"></i></button>
 
 </form>
-
+</div>
 
 {% endblock %}

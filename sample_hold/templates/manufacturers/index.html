@@ -8,22 +8,7 @@
 <br>
 {% for manufacturer in all_manufacturers %}
 
-
-<div id="single-manufacturer">
-{{ manufacturer.name }},
-{{ manufacturer.address }} 
-{{ manufacturer.phone }}
-
-
-{% if manufacturer.website %}
-<a href="{{ manufacturer.website }}" target="_blank">{{ manufacturer.website }}</a><br>
-
-{% else %}
-No web address available
-{% endif %}
-
-<a href="manufacturers/{{ manufacturer.id }}/edit">edit</a>
-</div>
+{% include "/manufacturers/show_manufacturer.html" %}
 {% endfor %}
 
 {% endblock %}

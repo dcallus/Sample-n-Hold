@@ -8,6 +8,12 @@
     src: url(static/futura-book-font.ttf);
   }
 
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 header {
     color: white;
     background-color: white;
@@ -284,7 +290,7 @@ pre {
     background-size: cover;
     background-repeat: no-repeat;
     border: none;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 /* FORM colouring */
@@ -398,14 +404,14 @@ input[type=text]:focus {
 .bin {
     background: none;
     border: none;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .save-button {
     color: black;
     background: none;
     border: none;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 /* manufacturers */
@@ -419,11 +425,16 @@ input[type=text]:focus {
 #single-manufacturer {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     line-height: 1.6;
-    background-color:rgba(23, 99, 181, 0.5);
+    background-color:rgba(35, 116, 203, 0.5);
     width: auto;
     max-width: 250px;
+    min-width: 100px;
     padding: 25px;
     margin: 20px;
+    box-shadow: 2px 2px 20px rgba(6, 46, 77, 0.4);
+}
+
+.new-manufacturer-info {
+    width:80%;
 }
