@@ -263,10 +263,6 @@ pre {
     background-repeat: no-repeat;
 } */
 
-.close {
-    color: rgba(255, 0, 0, 0.6);
-}
-
 .delete-button {
     width: 30px;
     height: 30px;
@@ -396,4 +392,8 @@ input[type=text]:focus {
 
 .fa-plus-square {
     padding-right: 8px;
+}
+
+.fa-times-circle {
+    color: rgba(255, 0, 0, 0.6);
 }
