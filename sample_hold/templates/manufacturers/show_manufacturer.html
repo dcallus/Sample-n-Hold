@@ -10,6 +10,8 @@
     {% else %}
     No web address available<br>
     {% endif %}
-    
+    {% if manufacturer.disabled %}
+    disabled
+    {% endif %}
     <a href="/manufacturers/{{ manufacturer.id }}/edit">edit</a>
     </div>

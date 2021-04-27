@@ -299,7 +299,7 @@ pre {
     background-repeat: no-repeat;
 } */
 
-.delete-button {
+/* .delete-button {
     width: 30px;
     height: 30px;
     background: url('/static/images/bin.png');
@@ -307,7 +307,7 @@ pre {
     background-repeat: no-repeat;
     border: none;
     /* cursor: pointer; */
-}
+} */
 
 /* FORM colouring */
 
@@ -454,6 +454,7 @@ input[type=text]:focus {
     display: flex;
     flex-direction: column;
     width:80%;
+    resize: none;
 }
 
 .manufacturer-info {
