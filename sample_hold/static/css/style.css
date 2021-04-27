@@ -37,6 +37,15 @@ h3 {
     margin: 0;
 }
 
+h3 a {
+    color: black;
+    text-decoration: none;
+}
+
+h3 a:hover {
+    text-decoration: underline;
+}
+
 #header {
     height: 100%;
 }
@@ -238,7 +247,7 @@ pre {
     margin-bottom: 1em;
 }
 
-#close-module {
+/* #close-module {
     margin-top: 0px;
     padding-right: 18px;
     padding-bottom: 12px;
@@ -247,6 +256,10 @@ pre {
     background: url('/static/images/close.png');
     background-size: cover;
     background-repeat: no-repeat;
+} */
+
+.close {
+    color: rgba(255, 0, 0, 0.6);
 }
 
 .delete-button {
