@@ -256,6 +256,7 @@ pre {
 
 #add {
     margin-top: 20px;
+    text-align: center;
 }
 
 #bin-area {
@@ -358,19 +359,6 @@ input[type=text]:focus {
     color: red;
 }
 
-.save-button {
-    background-color: rgba(0, 255, 0, 0.1);
-}
-
-.save-button:hover {
-    background-color: rgba(0, 255, 0, 0.1);
-    box-shadow: 0 0 4px rgb(0, 255, 0);
-}
-
-.save-button:active {
-    background-color: rgba(0, 255, 0, 0.4);
-}
-
 
 .form-element {
     border: 1px solid rgba(255, 0, 0, 0.5);
@@ -406,6 +394,13 @@ input[type=text]:focus {
 }
 
 .bin {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.save-button {
+    color: black;
     background: none;
     border: none;
     cursor: pointer;

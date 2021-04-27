@@ -8,7 +8,7 @@
             <form action="/modules/{{ module.id }}" method="POST">
                 <span id="info">
                 <h3>{% include 'modules/edit_form.html' %}</h3>
-                <a href="/modules/{{ module.id }}"><nav class='close'><i class="far fa-times-circle fa-2x"></i></nav></a>
+                <a href="/modules"><nav class='close'><i class="far fa-times-circle fa-2x"></i></nav></a>
         </span>
 
         <span class='tabs' style="color: rgba(40, 38, 38, 0.6);">
@@ -44,7 +44,8 @@
                   
             </div>
                 <div id="add">
-                    <button type="submit" class="save-button">save</button>
+                    <button type="submit" class="save-button"><i class="far fa-save fa-3x"></i></button><br>
+                    save
                 </div>
             </form>
                 <div id="bin-area">
