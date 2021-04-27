@@ -2,6 +2,13 @@
     outline: 1px solid blue;
 } */
 
+#home-choice {
+    display: flex; 
+    justify-content: space-around; 
+    margin: 0 150px 0 150px; 
+    text-align: center;
+}
+
 
 @font-face {
     font-family: futura;
