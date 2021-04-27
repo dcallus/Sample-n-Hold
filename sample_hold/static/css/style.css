@@ -22,10 +22,10 @@ header {
     justify-content: space-between;
 }
 
-#info-edit {
+/* #info-edit {
     display: flex;
     justify-content: space-between;
-}
+} */
 
 #content {
     margin-top: 40px;
