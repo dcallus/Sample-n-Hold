@@ -2,6 +2,11 @@
     outline: 1px solid blue;
 } */
 
+@font-face {
+    font-family: futura;
+    src: url(static/futura-book-font.ttf);
+  }
+
 header {
     background-color: white;
     position: sticky;
@@ -15,6 +20,7 @@ header {
 
 body {
     min-width: 290px;
+    font-family: futura, helvetica, sans-serif;
 }
 
 fieldset {
@@ -44,16 +50,19 @@ h3 {
 .shop-tab {
     margin-left: auto;
     margin-right: 30%;
+    background-color:rgba(138, 28, 28, 0.5);
 }
 
 .spec-tab {
     margin-left: 25%;
     margin-right: 30px;
+    background-color:rgba(39, 158, 194, 0.5)
 }
 
 
 .desc-tab {
     margin-right: 10px;
+    background-color:rgba(24, 156, 12, 0.5);
 }
 
 .shop-input {
