@@ -46,6 +46,11 @@ header {
     justify-content: space-between;
 }
 
+.options {
+    display: flex;
+    justify-content: space-between;
+}
+
 /* #info-edit {
     display: flex;
     justify-content: space-between;
@@ -459,6 +464,14 @@ input[type=text] {
     color: rgba(255, 0, 0, 1);
 }
 
+.reset:hover {
+    color: rgba(255, 0, 0, 1);
+}
+
+.search:hover {
+    color: green
+}
+
 .bin {
     background: none;
     border: none;
@@ -471,7 +484,6 @@ input[type=text] {
     border: none;
     /* cursor: pointer; */
 }
-
 /* manufacturers */
 
 .all-manufacturers {

@@ -1,24 +1,32 @@
 {% extends "base.html" %}
 {% block content %}
 
-
+<div class="options">
 <span>
   <form action="/" methods="POST">
-  <label for="filter-name">Module Name: </label>
-  <input type="text" name="filter-name" id="filter-id">
-  <label for="manufacturer">Manufacturer: </label>
-  <select name="filter-manufacturer" id="filter-manufacturer">
+  <label style="padding-left: 10px;" for="filter-name">Filter modules: </label>
+  <input class="form-element" type="text" name="filter-name" id="filter-id" placeholder="Module name...">
+  <select class="form-element" name="filter-manufacturer" id="filter-manufacturer">
+    <option value="" selected disabled hidden>Select a manufacturer...
       {% for manufacturer in all_manufacturers %}
       <option value="{{ manufacturer.id }}">{{ manufacturer.name }}</option>
       {% endfor %}
   </select>
+      <select class="form-element" name="function" id="function">
+        <option value="" selected disabled hidden>Select a function...</option>
+                <!-- selects from Attenuators onwards -->
+        {% include "/modules/module_type.html" %}
+        <button class="reset" type="reset" value="reset" >reset <i class="fas fa-times"></i></button>
+        <button class="search" type="submit">search <i class="fas fa-search"></i></button>
   </form>
   </span>
 
-<div id="add">
+<span id="add">
             
-    Add a module:<br><a href="/modules/new"><i class="far fa-plus-square fa-2x" style="color:black;"></i></a>
-  </div><br>
+    Add a module: <a href="/modules/new"><i class="far fa-plus-square fa-2x" style="color:black;"></i></a>
+</span>
+
+</div>
 
 {% for module in all_modules %}
 
