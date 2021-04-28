@@ -260,7 +260,7 @@ pre {
 }
 
 .new-image {
-    background: url("https://www.modulargrid.net/img/imagecache/377x800_83.jpg");
+
     width: auto;
     background-size: cover;
 }
@@ -277,6 +277,7 @@ pre {
     width: 60%;
     justify-content: center;
     text-align: center;
+    
 }
 
 /* fieldset */
@@ -382,7 +383,7 @@ input[type=text] {
   } */
 
 .form-element {
-    border: 1px solid rgb(165, 1, 1);
+    border: 1px dashed rgb(187, 4, 4);
     border-radius: 3px;
     box-shadow: 2px 2px 5px rgba(76, 170, 242, 0.2) inset;
     padding: 4px 0 0;

@@ -31,12 +31,12 @@ def modules():
                 filtered_manufacturers.append(module)
         filters_used.append(filtered_manufacturers)
     
-    # pdb.set_trace()
     if name_filter is not None:
         for module in modules:
             if name_filter.lower() in module.name.lower():
                 filtered_names.append(module)
         filters_used.append(filtered_names)
+    
 
     # combines any amount of filters, just add a new filter above
     if filters_used != []:
