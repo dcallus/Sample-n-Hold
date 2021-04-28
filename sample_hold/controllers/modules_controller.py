@@ -8,8 +8,9 @@ modules_blueprint = Blueprint("modules", __name__)
 
 @modules_blueprint.route("/modules")
 def modules():
+    manufacturers = manufacturer_repository.select_all()
     modules = module_repository.select_all() # NEW
-    return render_template("modules/index.html", all_modules = modules)
+    return render_template("modules/index.html", all_modules = modules, all_manufacturers = manufacturers)
 
 # NEW
 # GET '/modules/new'

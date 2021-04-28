@@ -216,6 +216,7 @@ pre {
     width: 30%;
     display: flex;
     flex-direction: column;
+    padding-left: 10px;
     justify-content: space-around;
     background-color:rgb(179, 155, 228)
 }

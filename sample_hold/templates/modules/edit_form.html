@@ -14,48 +14,9 @@
         </select>  - 
         <select class="form-element" name="function" id="function" required>
         <option value="{{ module.function }}" selected>{{ module.function }}</option>
-        <option value="Attenuator">Attenuator</option>
-        <option value="Clock Generator">Clock Generator</option>
-        <option value="Clock Modulator">Clock Modulator</option>
-        <option value="CV Modulation">CV Modulation</option>
-        <option value="Delay">Delay</option>
-        <option value="Digital">Digital</option>
-        <option value="Distortion">Distortion</option>
-        <option value="Drum">Drum</option>
-        <option value="Dynamics">Dynamics</option>
-        <option value="Effect">Effect</option>
-        <option value="Envelope Follower">Envelope Follower</option>
-        <option value="Envelope Generator">Envelope Generator</option>
-        <option value="Equalizer">Equalizer</option>
-        <option value="Filter">Filter</option>
-        <option value="Frequency Divider">Frequency Divider</option>
-        <option value="Function Generator">Function Generator</option>
-        <option value="LFO">LFO"</option>
-        <option value="Logic">Logic</option>
-        <option value="Low Pass Gate">Low Pass Gate"</option>
-        <option value="MIDI">MIDI</option>
-        <option value="Mixer">Mixer"</option>
-        <option value="Multiple">Multiple</option>
-        <option value="Noise">Noise</option>
-        <option value="Oscillator">Oscillator</option>
-        <option value="Panning">Panning</option>
-        <option value="Phase Shifter">Phase Shifter</option>
-        <option value="Pitch Shifter">Pitch Shifter</option>
-        <option value="Polarizer">Polarizer</option>
-        <option value="Quantizer">Quantizer</option>
-        <option value="Random">Random</option>
-        <option value="Reverb">Reverb</option>
-        <option value="Ring Modulator">Ring Modulator</option>
-        <option value="Sample and Hold">Sample and Hold</option>
-        <option value="Sampling">Sampling</option>
-        <option value="Sequencer">Sequencer</option>
-        <option value="Slew Limiter">Slew Limiter</option>
-        <option value="Switch">Switch</option>
-        <option value="Synth Voice">Synth Voice</option>
-        <option value="Utility">Utility</option>
-        <option value="VCA">VCA</option>
-        <option value="Waveshaper">Waveshaper</option>
-        </select>
+                <!-- selects from Attenuators onwards -->
+        {% include "/modules/module_type.html" %} 
+
         
         </div>
         </fieldset>

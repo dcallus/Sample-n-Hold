@@ -1,6 +1,20 @@
 {% extends "base.html" %}
 {% block content %}
 
+
+<span>
+  <form action="/" methods="POST">
+  <label for="filter-name">Module Name: </label>
+  <input type="text" name="filter-name" id="filter-id">
+  <label for="manufacturer">Manufacturer: </label>
+  <select name="filter-manufacturer" id="filter-manufacturer">
+      {% for manufacturer in all_manufacturers %}
+      <option value="{{ manufacturer.id }}">{{ manufacturer.name }}</option>
+      {% endfor %}
+  </select>
+  </form>
+  </span>
+
 <div id="add">
             
     Add a module:<br><a href="/modules/new"><i class="far fa-plus-square fa-2x" style="color:black;"></i></a>
