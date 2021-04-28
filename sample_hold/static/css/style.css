@@ -6,7 +6,11 @@ html {
 
 #home-choice {
     display: flex; 
+    background: url("/static/images/front.jpeg");
+    background-size: 100vh;
+    height: 50vh;
     justify-content: space-around; 
+    align-items: center;
     margin: 0 150px 0 150px; 
     text-align: center;
 }
@@ -510,7 +514,7 @@ input[type=text] {
     display: flex;
     flex-direction: column;
     line-height: 1.6;
-    background-color:rgba(35, 116, 203, 0.5);
+    background-color:rgba(35, 116, 203, 0.7);
     width: auto;
     max-width: 250px;
     min-width: 100px;
