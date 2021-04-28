@@ -523,3 +523,10 @@ input[type=text] {
     display: flex;
     justify-content: space-between;
 }
+
+.fa-arrow-circle-up {
+    bottom: 20px;
+    right: 20px;
+    position: fixed;
+    color: rgba(0, 0, 0, 0.05);
+}
