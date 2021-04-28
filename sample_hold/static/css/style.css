@@ -40,6 +40,7 @@ header {
     background-size: contain;
     background-repeat: repeat-x;
     height: 120px;
+    margin-top: 0;
   }
 
 #info {
@@ -91,9 +92,9 @@ h3 a:hover {
     text-decoration: underline;
 }
 
-#header {
+/* #header {
     height: 100%;
-}
+} */
 
 .tabs > nav {
     padding: 5px;
@@ -101,7 +102,7 @@ h3 a:hover {
 
 .tabs {
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     margin-top: 0.5em;
 }
 
@@ -116,14 +117,14 @@ h3 a:hover {
 }
 
 .shop-tab {
-    margin-left: auto;
-    margin-right: 30%;
+    /* margin-left: auto; */
+    margin-right: 33%;
     background-color:rgb(249, 168, 163);
 }
 
 .spec-tab {
-    margin-left: 25%;
-    margin-right: 30px;
+    margin-left: 17%;
+    margin-right: 0%;
     background-color: rgb(179, 155, 228);
 }
 
@@ -204,7 +205,8 @@ pre {
     background-color: rgba(255, 255, 255, 0.4);
 }
 .textwrapper
-{
+{   
+    /* max-width: 550px; */
     background-color: rgba(255, 255, 255, 0.7);
     border: 0;
     margin:0;
