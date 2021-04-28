@@ -40,7 +40,8 @@ header {
     background-size: contain;
     background-repeat: repeat-x;
     height: 120px;
-    margin-top: 0;
+    margin-top: 0px;
+    margin-bottom: 40px;
   }
 
 #info {
@@ -60,10 +61,6 @@ header {
 #filters {
     padding: 20px;
 }
-
-#content {
-    margin-top: 40px;
-  }
 
 body {
     background: rgb(254, 243, 237);
