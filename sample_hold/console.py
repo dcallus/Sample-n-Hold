@@ -1,54 +1,42 @@
 import pdb
 from models.module import Module
 from models.manufacturer import Manufacturer
+from descriptions import *
 
 import repositories.module_repository as module_repository
 import repositories.manufacturer_repository as manufacturer_repository
 
-# TEMPORARILY REMOVE TO CREATE MULTIPLES
+
 module_repository.delete_all()
 manufacturer_repository.delete_all()
 
-
-# mutant_url = "https://www.modulargrid.net/img/imagecache/212x413_3535.jpg"
-mutant_url = "https://www.modulargrid.net/img/modcache/32519.f.jpg"
-
-
-mutant_description = """====Primary Features====
-It's really two modules in one: a totally unique analogue bassdrum and a voltage controlled distortion module! (with the same topology as batteryACID!)
-
-- analogue bassdrum circuitry capable of vanilla TR-808 sounds
-- built in voltage controlled distortion (batteryACID distortion)
-- distortion accepts external inputs when not being used with kick drum (great for acid synth leads)
-- voltage control of distortion amount
-- voltage control of decay from short kicks to long "ooooooooomphs"
-- voltage control of pitch (approximates v/oct response, but not musically tuned)
-- non-invasive analogue optocouplers used for voltage control, thus, completely vintage sounds can still be had if that's what you're after!
-- completely redesigned, hi-fi signal chain spares no expense by replacing cheap transistor amplifiers with low noise opamp equivalents
-- you can dial in super hot, modular level output levels (up to 20Vp-p!)
-
-- analogue bassdrum circuitry capable of vanilla TR-808 sounds
-- built in voltage controlled distortion (batteryACID distortion)
-- distortion accepts external inputs when not being used with kick drum (great for acid synth leads)
-- voltage control of distortion amount
-- voltage control of decay from short kicks to long "ooooooooomphs"
-- voltage control of pitch (approximates v/oct response, but not musically tuned)
-- non-invasive analogue optocouplers used for voltage control, thus, completely vintage sounds can still be had if that's what you're after!
-- completely redesigned, hi-fi signal chain spares no expense by replacing cheap transistor amplifiers with low noise opamp equivalents
-- you can dial in super hot, modular level output levels (up to 20Vp-p!)"""
-
+# MANUFACTURERS
 hex_address = "HEXINVERTER ÉLECTRONIQUE, Somewhere in Canada, Maybe Montreal?"
-
-hexinverter = Manufacturer("Hexinverter", hex_address, "1-555-2345")
-manufacturer_repository.save(hexinverter)
 
 
 doepfer = Manufacturer("Doepfer", "somewhere in Germany", "555-555-555", "http://www.doepfer.de/")
+hexinverter = Manufacturer("Hexinverter", hex_address, "1-555-2345")
 manufacturer_repository.save(doepfer)
 
-module_1 = Module(name="Mutant Bassdrum", description=mutant_description, stock="5",
+
+manufacturer_repository.save(hexinverter)
+
+
+# MODULES
+
+mutant_bassdrum_url = "https://www.modulargrid.net/img/imagecache/212x413_3535.jpg"
+
+
+
+
+
+
+
+
+
+module_1 = Module(name="Mutant Bassdrum", description=mutant_bassdrum_description, stock="5",
                   buying_cost=150, selling_price=212, function="Drum", width=13, depth=35,
-                  image_url=mutant_url, minus_12v=55, plus_12v=45, manufacturer=hexinverter)
+                  image_url=mutant_bassdrum_url, minus_12v=55, plus_12v=45, manufacturer=hexinverter)
 
 module_2 = Module(name="Mutant Clap", description="a short description", stock="3",
                   buying_cost=100, selling_price=180, function="Drum", width=13, depth=35,
