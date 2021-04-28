@@ -349,31 +349,55 @@ pre {
 } */
 
 
-input[type=text]:valid {
+/* input[type=text]:valid {
     background-color:rgba(110, 186, 245, 0.25);
     box-shadow: 2px 2px 5px rgba(76, 170, 242, 0.2) inset;
     transition: 0.2s;
 }
 
-input[type=text]:active {
-    background-color:rgba(9, 143, 245, 0.3);
-    box-shadow: 0 0 10px rgb(45, 159, 247);
-    transition: 0.5s;
-}
+
 
 input[type=text] {
     border-radius: 3px;
     box-shadow: 2px 2px 5px rgba(76, 170, 242, 0.2) inset;
     padding: 4px 0 0;
     padding-left: 3px;
-}
+} */
 
-input[type=text]:focus {
+/* input[type=text]:focus {
     box-shadow: 0 0 6px rgb(45, 159, 247);
     transition: .3s;
     border: 1px solid rgba(77, 77, 240, 0.5);
     outline: 0px solid white;
+  } */
+
+.form-element {
+    border: 1px solid rgb(165, 1, 1);
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px rgba(76, 170, 242, 0.2) inset;
+    padding: 4px 0 0;
+    padding-left: 3px;
+}
+
+.form-element:valid {
+    background-color:rgba(213, 225, 237);
+    box-shadow: 2px 2px 5px rgba(76, 170, 242, 0.2) inset;
+    transition: 0.2s;
+    border: 1px solid rgb(169, 218, 255);
+}
+
+.form-element:focus {
+    box-shadow: 0 0 6px rgba(26, 114, 182, 0.81);
+    transition: .3s;
+    border: 1px solid rgba(77, 77, 240, 0.5);
+    outline: 0px solid white;
   }
+
+.form-element:active {
+    background-color:rgb(170, 206, 235);
+    box-shadow: 0 0 10px rgb(45, 159, 247);
+    transition: 0.5s;
+}
 
 .add-manufacturer {
      /* 0 opacity needed for bg otherwise from-group border is partially obscured */
@@ -408,15 +432,6 @@ input[type=text]:focus {
 
 .reset-button:active {
     color: red;
-}
-
-
-.form-element {
-    border: 1px solid rgba(255, 0, 0, 0.5);
-}
-
-.form-element:valid {
-    border: 1px solid rgba(110, 186, 245, 0.25);
 }
 
 
