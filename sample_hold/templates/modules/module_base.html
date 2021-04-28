@@ -8,6 +8,9 @@
         <section class='image'>
           {% if module.image_url %}
           <img src="{{module.image_url}}" alt="module pic">
+          <!-- sometimes image url becomes None -->
+          {% elif module.image_url == 'None' %}
+          <img src="/static/images/no_image.svg" alt="no image"> 
           {% else %}
           <img src="/static/images/no_image.svg" alt="no image">
           {% endif %}
