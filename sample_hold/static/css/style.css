@@ -1,10 +1,15 @@
+html {
+    background: url("/static/images/bg.jpeg");
+    background-size: 2500px;
+    background-repeat: repeat;
+}
+
 #home-choice {
     display: flex; 
     justify-content: space-around; 
     margin: 0 150px 0 150px; 
     text-align: center;
 }
-
 
 @font-face {
     font-family: futura;
@@ -59,7 +64,7 @@ header {
 }
 
 body {
-    background: rgb(254, 243, 237, 0.8);
+    /* background: rgb(254, 243, 237); */
     min-width: 290px;
     font-family: futura, helvetica, sans-serif;
     margin: 0px;
@@ -132,13 +137,14 @@ h3 a:hover {
 }
 
 .content {
-    background: rgba(254, 243, 237, 0.9)
+    /* background: rgba(254, 243, 237, 0.1); */
     display: flex;
     flex-direction: column;
     margin: 10px 10px 30px 10px;
 }
 
 .content:hover {
+    background: rgba(254, 243, 237, 0.1);
     box-shadow: 2px 2px 20px rgba(6, 46, 77, 0.4);
     transition: 0.1s;
 }
