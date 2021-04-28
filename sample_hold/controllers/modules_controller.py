@@ -32,7 +32,7 @@ def modules():
         filters_used.append(filtered_manufacturers)
     
     # pdb.set_trace()
-    if name_filter is not '':
+    if name_filter is not None:
         for module in modules:
             if name_filter.lower() in module.name.lower():
                 filtered_names.append(module)
