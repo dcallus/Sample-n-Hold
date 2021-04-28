@@ -42,7 +42,7 @@ def modules():
     if filters_used != []:
         for filter in filters_used:
             filtered_results = set(filters_used[0]).intersection(set(filter))
-            modules = list(filtered_results)
+        modules = list(filtered_results) 
 
     return render_template("modules/index.html", all_modules = modules, all_manufacturers = manufacturers)
 
