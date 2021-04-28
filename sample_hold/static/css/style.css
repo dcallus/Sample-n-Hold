@@ -146,7 +146,7 @@ h3 a:hover {
 
 pre {
     white-space: pre-wrap;
-    height: 95%;
+    min-height: 95%;
 }
 
 
