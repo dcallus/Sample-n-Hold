@@ -15,21 +15,31 @@ def modules():
     modules = module_repository.select_all() # NEW
     filtered_functions = []
     filtered_manufacturers = []
+    filters_used = []
 
-    # if function_filter is not None:
-    #     for module in modules:
-    #         if module.function == function_filter:
-    #             filtered_functions.append(module)
-    #     modules = filtered_functions
-    # pdb.set_trace()
+    if function_filter is not None:
+        for module in modules:
+            if module.function == function_filter:
+                filtered_functions.append(module)
+        filters_used.append(filtered_functions)
+        # modules = filtered_functions
+
     if manufacturer_filter is not None:
         for module in modules:
             if str(module.manufacturer.id) == manufacturer_filter:
                 filtered_manufacturers.append(module)
-        modules = filtered_manufacturers
-        
-    # modules = set(filtered_functions).intersection(filtered_manufacturers)
+        filters_used.append(filtered_manufacturers)
+        # modules = filtered_manufacturers
+    
+    # for filter in (filtered_functions, filtered_manufacturers):
+    #     if filter != []:
+    # filters_used.append(filter)
+    if filters_used != []:
+        for filter in filters_used:
+            filtered_results = set(filters_used[0]).intersection(set(filter))
+        modules = list(filtered_results)
     # pdb.set_trace()
+
     return render_template("modules/index.html", all_modules = modules, all_manufacturers = manufacturers)
 
 # NEW
