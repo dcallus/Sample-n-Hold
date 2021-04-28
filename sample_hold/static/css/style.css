@@ -11,7 +11,7 @@ html {
     height: 50vh;
     justify-content: space-around; 
     align-items: center;
-    margin: 0 150px 0 150px; 
+    margin: 20px 150px 0 150px; 
     text-align: center;
 }
 
@@ -40,7 +40,6 @@ header {
     position: sticky;
     top: 0;
     padding: 2px 0 3px 3px;
-    /* background-color:rgba(24, 156, 12, 0.5); */
     background-image: url("/static/images/logo_2.png");
     background-size: contain;
     background-repeat: repeat-x;
@@ -59,16 +58,11 @@ header {
     padding-top: 40px;
 }
 
-/* #info-edit {
-    display: flex;
-    justify-content: space-between;
-} */
 #filters {
     padding: 20px;
 }
 
 body {
-    /* background: rgb(254, 243, 237); */
     min-width: 290px;
     font-family: futura, helvetica, sans-serif;
     margin: 0px;
@@ -94,10 +88,6 @@ h3 a:hover {
     text-decoration: underline;
 }
 
-/* #header {
-    height: 100%;
-} */
-
 .tabs > nav {
     padding: 5px;
 }
@@ -119,7 +109,6 @@ h3 a:hover {
 }
 
 .shop-tab {
-    /* margin-left: auto; */
     margin-right: 33%;
     background-color:rgb(249, 168, 163);
 }
@@ -141,7 +130,6 @@ h3 a:hover {
 }
 
 .content {
-    /* background: rgba(254, 243, 237, 0.1); */
     display: flex;
     flex-direction: column;
     margin: 10px 10px 30px 10px;
@@ -164,15 +152,7 @@ pre {
     display: flex;
     height: 100%;
     flex-direction: row;
-    /* width: 100%;
-    align-items: center; */
 }
-
-/* img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-} */
 
 textarea
 {
@@ -195,8 +175,7 @@ textarea:active {
 textarea {
     border-radius: 3px;
     box-shadow: 2px 2px 5px rgba(76, 170, 242, 0.2) inset;
-    /* padding: 4px 0 0;
-    padding-left: 3px; */
+
 }
 
 textarea:focus {
@@ -211,7 +190,6 @@ pre {
 }
 .textwrapper
 {   
-    /* max-width: 550px; */
     background-color: rgba(255, 255, 255, 0.7);
     border: 0;
     margin:0;
@@ -259,7 +237,6 @@ pre {
 }
 
 
-
 .image img {
     object-fit: cover;
     max-width: 90%;
@@ -288,14 +265,6 @@ pre {
     
 }
 
-/* fieldset */
-/* .stock-entry {
-    display: flex;
-    width: 50px;
-    margin-top: auto;
-    margin-bottom: 2em;
-} */
-
 /* stock number (on module page) */
 #stock-fig {
     margin: 10px;
@@ -317,7 +286,6 @@ pre {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: flex-start; */
     width: 10%;
 }
 
@@ -335,60 +303,9 @@ pre {
     margin-bottom: 1em;
 }
 
-/* #close-module {
-    margin-top: 0px;
-    padding-right: 18px;
-    padding-bottom: 12px;
-    width: 20px;
-    height: 20px;
-    background: url('/static/images/close.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-} */
-
-/* .delete-button {
-    width: 30px;
-    height: 30px;
-    background: url('/static/images/bin.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: none;
-    /* cursor: pointer; */
-} */
-
-/* FORM colouring */
-
 .form-group {
     border-radius: 4px;
 }
-
-/* .form-group:active {
-    box-shadow: 0 0 6px rgb(45, 159, 247);
-    transition: 0.5s;
-} */
-
-
-/* input[type=text]:valid {
-    background-color:rgba(110, 186, 245, 0.25);
-    box-shadow: 2px 2px 5px rgba(76, 170, 242, 0.2) inset;
-    transition: 0.2s;
-}
-
-
-
-input[type=text] {
-    border-radius: 3px;
-    box-shadow: 2px 2px 5px rgba(76, 170, 242, 0.2) inset;
-    padding: 4px 0 0;
-    padding-left: 3px;
-} */
-
-/* input[type=text]:focus {
-    box-shadow: 0 0 6px rgb(45, 159, 247);
-    transition: .3s;
-    border: 1px solid rgba(77, 77, 240, 0.5);
-    outline: 0px solid white;
-  } */
 
 .form-element {
     border: 1px dashed rgb(187, 4, 4);
@@ -419,12 +336,9 @@ input[type=text] {
 }
 
 .add-manufacturer {
-     /* 0 opacity needed for bg otherwise from-group border is partially obscured */
     background-color:rgba(255, 255, 255, 0);
     border: 0px;
     padding: 0;
-    /* border-left: 1px solid rgba(100, 100, 100, 0.5); */
-    /* padding-top: 2px; */
 }
 
 .add-manufacturer a {
@@ -493,15 +407,15 @@ input[type=text] {
 .bin {
     background: none;
     border: none;
-    /* cursor: pointer; */
+
 }
 
 .save-button {
     color: black;
     background: none;
     border: none;
-    /* cursor: pointer; */
 }
+
 /* manufacturers */
 
 .all-manufacturers {
