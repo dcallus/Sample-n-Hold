@@ -85,15 +85,6 @@ Res-mod: it is CV control for Resonance or Q-factor of both filters. Good for vo
 
 math_description = """MATHS builds on the tradition set into motion in the 1960s when Don Buchla adapted circuits found within analog computers for musical purposes. Buchla's Algebraic Processor, Model 257 and 281 changed the way music synthesizers utilize control voltages. MATHS continues this great tradition - sculpting the voltages we use to sculpt sounds."""
 
-
-a_148_description = """Module A-148 (Dual S&H) has two identical sample & hold modules, designed to produce 'staircase' voltages. The signal present at the sample input is sampled at a rate set by the signal at the trigger input, and held at that voltage at the S&H output.
-
-The exact shape of the staircase depends on the sort of waveform at the sample input: NOISE or RANDOM signals produce random patterns; an LFO produces rising or falling staircase patterns.
-
-Two LEDs for each S&H indicate the voltage (positive or negative) of the sampled signal.
-
-For more detailed information please look at the English A-148 Dual S&H user's manual"""
-
 a_160_description = """Eurorack Module A-160 from Doepfer
 Clock Divider
 
@@ -118,7 +109,12 @@ The module can be used for all kind of clock multiplying applications. One impor
 
 Note: Due to the nature of clock multiplying it takes a few input clock pulses until the clock output is stable. One has to average a few input clock pulses to generate the multiplied clock output signal. Even when the input clock frequency changes it will take a few cycles until the output clock signal is correct as the module cannot forsee the future of the clock input signal. The generated clock output signal is derived from the last few cycles of the clock input signal. Consequently the module should be driven only by a clock signal with constant or slowly changing frequency."""
 
-pittburgh_lpg_description= """Triple Mode Filter, VCA, Lopass Gate
+spock_description = """Boolean Logic: The Spock module comprises two sets of CMOS based dual input logic gates with te following functions: AND, OR, XOR and NOT. The top and bottom half of
+the module are identical but can be combined together with patch cables to realise more complex logic functions.
+This module is ideally used with clocks, triggers and other source of square pulses. Interesting results are also achieved by feeding audiorate signals into the gate
+inputs and creating complex pulse based waveforms."""
+
+pittsburgh_lpg_description = """Triple Mode Filter, VCA, Lopass Gate
 
 The Pittsburgh Modular Lopass Gate module is a new take on a classic. Our intention was not to clone but to reengineer and expand on the original idea. Our module includes an amazing new self-oscillating resonance circuit and a quieter vactrol based VCA circuit with true unity gain. Voltage control of the module is handled using an invertible, attenuated input and ping input. The ping input takes any gate or square wave and converts it into a very tight trigger used to ping the vactrol.
 
@@ -134,16 +130,3 @@ The lopass gate module is unique in the way that it simulates the characteristic
 The circuitry behind the lopass gate has evolved over the years to include resonance and more complex modulation options but the ability to switch between voltage controlled amplifier, low pass filter, and a third mode which uses both the VCA and filter together remains at the core of the modules functionality. A lot of the characteristics associated with the lopass gate circuit come from the use of vactrols. A vactrol is an optoelectronic device consisting of an LED and light detector enclosed in a light tight package. The elements of the vactrol are optically coupled and electrically isolated from each other. When the LED within the vactrol turns on, the light detector reacts very quickly creating a very sharp attack, however, when the LED turns off, the light detector within the vactrol does not react as quickly and closes more slowly. That slow decay or ringing is the quality most associated with the lopass gate. Therefore, using a very short trigger to ping the vactrol will not result in a very short sound, instead the result is an organic percussive sound with an natural sounding decay.
 
 The lopass gate uses a Sallen-Key filter. The Sallen-Key filter is a 2 pole 12db filter with a very buttery, natural sound. In addition to the lopass gate, the Sallen-Key filter was used as the core of Korg's classic MS-10 and MS-20 filters. Although the Korg filters are remembered for their biting growl, that has more to do with the resonance then with the filter itself."""
-
-mum_m8_description = """Akai S950-based switched capacitor LPF
-
-‘MUM M8’ is an 8hp Eurorack low pass filter building on the filter design used in the classic Akai S950 12 bit sampler with the addition of resonance, voltage control, clipped saturation and a dedicated VCA.
-
-The low pass filter gives the recognisable super smooth vacuum like tone sucking sound which works magic on complex sources. The addition of clipped overdrive and intentionally aggressive self-oscillating resonance compliment the smooth filter core by juxtaposing it into more wasp like territory with acidic squeals and a more gritty sound.
-
-The filter core is a 6th Order Butterworth switched capacitor type design featuring an analog core but controlled by a high speed digital clock. This produces the characteristic smooth sounding filter but, as with the original S950, has a relatively high minimum cut off as to avoid ‘clock bleed’ into the filter output from the digital control. This minimum cut of point can be controlled via trimmers on the rear of the module."""
-
-spock_description = """Boolean Logic: The Spock module comprises two sets of CMOS based dual input logic gates with te following functions: AND, OR, XOR and NOT. The top and bottom half of
-the module are identical but can be combined together with patch cables to realise more complex logic functions.
-This module is ideally used with clocks, triggers and other source of square pulses. Interesting results are also achieved by feeding audiorate signals into the gate
-inputs and creating complex pulse based waveforms."""
