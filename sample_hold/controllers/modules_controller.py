@@ -34,7 +34,7 @@ def modules():
     # pdb.set_trace()
     if name_filter is not '':
         for module in modules:
-            if name_filter == module.name:
+            if name_filter.lower() in module.name.lower():
                 filtered_names.append(module)
         filters_used.append(filtered_names)
 
