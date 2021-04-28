@@ -12,7 +12,7 @@
       <option value="{{ manufacturer.id }}">{{ manufacturer.name }}</option>
       {% endfor %}
   </select>
-      <select class="form-element" name="function" id="function">
+      <select class="form-element" name="filter-function" id="filter-function">
         <option value="" selected disabled hidden>Select a function...</option>
                 <!-- selects from Attenuators onwards -->
         {% include "/modules/module_type.html" %}

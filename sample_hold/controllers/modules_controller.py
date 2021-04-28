@@ -1,6 +1,6 @@
 from flask import Blueprint, Flask, redirect, render_template, request
-import pdb
 from models.module import Module
+import pdb
 import repositories.module_repository as module_repository
 import repositories.manufacturer_repository as manufacturer_repository
 
@@ -8,19 +8,28 @@ modules_blueprint = Blueprint("modules", __name__)
 
 @modules_blueprint.route("/modules")
 def modules():
-    function_filter = request.args.get("function")
+    function_filter = request.args.get("filter-function")
+    manufacturer_filter = request.args.get("filter-manufacturer")
     # pdb.set_trace()
     manufacturers = manufacturer_repository.select_all()
-
     modules = module_repository.select_all() # NEW
+    filtered_functions = []
+    filtered_manufacturers = []
 
-    if function_filter is not None:
-        filtered_modules = []
+    # if function_filter is not None:
+    #     for module in modules:
+    #         if module.function == function_filter:
+    #             filtered_functions.append(module)
+    #     modules = filtered_functions
+    # pdb.set_trace()
+    if manufacturer_filter is not None:
         for module in modules:
-            if module.function == function_filter:
-                filtered_modules.append(module)
-        modules = filtered_modules
-
+            if str(module.manufacturer.id) == manufacturer_filter:
+                filtered_manufacturers.append(module)
+        modules = filtered_manufacturers
+        
+    # modules = set(filtered_functions).intersection(filtered_manufacturers)
+    # pdb.set_trace()
     return render_template("modules/index.html", all_modules = modules, all_manufacturers = manufacturers)
 
 # NEW
