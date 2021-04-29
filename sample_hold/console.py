@@ -52,31 +52,31 @@ module_2 = Module(name="Mutant Clap", description=mutant_clap_description, stock
                   image_url=mutant_clap_url, minus_12v=55, plus_12v=45, manufacturer=hexinverter)
 
 module_3 = Module(name="Mutant Machine", description=mutant_machine_description, stock="22",
-                  buying_cost=100, selling_price=180, function="Drum", width=13, depth=35,
+                  buying_cost=375, selling_price=450, function="Drum", width=13, depth=35,
                   image_url=mutant_machine_url, minus_12v=55, plus_12v=45, manufacturer=hexinverter)
 
 module_4 = Module(name="Mutant Hot Glue", description=mutant_hotglue_description, stock="6",
-                  buying_cost=100, selling_price=180, function="Dynamics", width=21, depth=38,
+                  buying_cost=290, selling_price=350, function="Dynamics", width=21, depth=38,
                   image_url=mutant_hotglue_url, minus_12v=70, plus_12v=55, manufacturer=hexinverter)
 
 module_5 = Module(name="Twin Peaks Resonator", description=twin_peak_description, stock="10",
-                  buying_cost=100, selling_price=180, function="Filter", width=16, depth=38,
+                  buying_cost=300, selling_price=365, function="Filter", width=16, depth=38,
                   image_url=twin_peak_res_url, minus_12v=65, plus_12v=75, manufacturer=klangbau)
 
 module_6 = Module(name="Maths", description=math_description, stock="20",
-                  buying_cost=70, selling_price=120, function="Function Generator", width=20, depth=35,
+                  buying_cost=250, selling_price=300, function="Function Generator", width=20, depth=35,
                   image_url=makenoise_math_url, minus_12v=55, plus_12v=45, manufacturer=make_noise)
 
 module_7 = Module(name="A-160", description=a_160_description, stock="5",
-                  buying_cost=70, selling_price=120, function="Clock Modulator", width=8, depth=35,
+                  buying_cost=50, selling_price=65, function="Clock Modulator", width=8, depth=35,
                   image_url=a_160_url, minus_12v=60, plus_12v=45, manufacturer=doepfer)
 
 module_8 = Module(name="A-160-2", description=a_160_2_description, stock="4",
-                  buying_cost=70, selling_price=120, function="Clock Modulator", width=8, depth=35,
+                  buying_cost=65, selling_price=100, function="Clock Modulator", width=8, depth=35,
                   image_url=a_160_2_url, minus_12v=65, plus_12v=45, manufacturer=doepfer)
 
 module_9 = Module(name="A-160-5", description=a_160_5_description, stock="8",
-                  buying_cost=70, selling_price=120, function="Clock Modulator", width=8, depth=35,
+                  buying_cost=65, selling_price=100, function="Clock Modulator", width=8, depth=35,
                   image_url=a_160_5_url, minus_12v=20, plus_12v=25, manufacturer=doepfer)
 
 module_10 = Module(name="LPG2", description=pittsburgh_lpg_description, stock="1",
