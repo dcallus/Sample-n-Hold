@@ -1,6 +1,5 @@
 from flask import Blueprint, Flask, redirect, render_template, request
 from models.module import Module
-import pdb
 import repositories.module_repository as module_repository
 import repositories.manufacturer_repository as manufacturer_repository
 
@@ -36,13 +35,14 @@ def modules():
             if name_filter.lower() in module.name.lower():
                 filtered_names.append(module)
         filters_used.append(filtered_names)
-    
 
     # combines any amount of filters, just add a new filter above
     if filters_used != []:
+        filtered_results = set(filters_used[0])
         for filter in filters_used:
-            filtered_results = set(filters_used[0]).intersection(set(filter))
-        modules = list(filtered_results) 
+            filtered_results = filtered_results.intersection(set(filter))
+        modules = filtered_results
+
 
     return render_template("modules/index.html", all_modules = modules, all_manufacturers = manufacturers)
 
