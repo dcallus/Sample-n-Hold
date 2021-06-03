@@ -37,6 +37,6 @@ eBay, Amazon (back end only), Magento
   -  With PSQL createdb sample_hold
   -  psql -d sample_hold -f ./db/sample_hold.py
   -  python3 console.py
-  -  flask run
+  -  flask run (from sample_hold folder)
   -  localhost:5000/
 
